@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Aboutus() {
   return (
-    <div>
+    <>
       <div className="aboutus">
         <div className="aboutustitle">
           <h2>Seprex Private Limited</h2>
@@ -48,7 +48,7 @@ export default function Aboutus() {
           </Container>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

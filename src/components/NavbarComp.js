@@ -3,18 +3,19 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import { Route, Link, BrowserRouter as Router, Routes } from "react-router-dom";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Aboutus from "./Aboutus";
 import Home from "./Home";
 import Products from "./Products";
 import Services from "./Services";
-import Aboutus from "./Aboutus";
+import './css/navbar.css';
 
 export default class NavbarComp extends Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-          <Navbar expand="lg" className="bg-body-tertiary">
+          <Navbar expand="lg" className="bg-body-tertiary make-transaparent">
             <Container>
               <Navbar.Brand href="/">
                 <img
@@ -22,7 +23,7 @@ export default class NavbarComp extends Component {
                   src="/images/weblogo.png"
                   width="30"
                   height="30"
-                  className="d-inline-block align-top"
+                  className="d-inline-block align-top "
                 />
                 <span style={{ marginRight: 20 }}></span>
                 Seprex

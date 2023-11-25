@@ -1,17 +1,18 @@
-import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComp from './components/NavbarComp'
-import AppFooter from "./components/Footer";
-
+import React from 'react';
+import "./App.css";
+import NavbarComp from './components/NavbarComp';
 
 function App() {
   return (
+    <>
     <div className="App">
       <NavbarComp/>
       {/* <footer id="footer">
         <AppFooter />
       </footer> */}
-    </div>
+      </div>
+      </>
   );
 }
 

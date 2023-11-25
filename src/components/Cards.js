@@ -4,7 +4,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 
 export default function Cards() {
   return (
-    <div>
+    <>
       <CardGroup>
         <Card
           className="cardborder"
@@ -27,6 +27,6 @@ export default function Cards() {
           </Card.Body>
         </Card>
       </CardGroup>
-    </div>
+    </>
   );
 }

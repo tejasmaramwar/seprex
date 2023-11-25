@@ -1,0 +1,15 @@
+.make-transaparent{
+    background-color: transparent !important;
+    position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100%;
+      z-index: 100;
+
+}
+.make-transaparent  a{
+  color:white;
+  font-size: 20px;
+  font-weight: 800;
+}

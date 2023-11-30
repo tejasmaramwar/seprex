@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import OurCustomer from "./OurCustomer";
 import './css/home.css';
 export default class Home extends Component {
   render() {
     return (
-      <>
-      <div style={{ height: "100vh" }}>
+    <>
+      <div>
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
             <img
@@ -71,6 +72,7 @@ export default class Home extends Component {
           </Carousel.Item>
         </Carousel>
         </div>
+        <OurCustomer />
         </>
     );
   }

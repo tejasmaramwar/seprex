@@ -1,0 +1,16 @@
+footer {
+  padding: 50px 50px;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.footerMain .footerLeft div {
+  display: flex;
+  flex: 2;
+}
+
+.footerMain .footerLeft div img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}

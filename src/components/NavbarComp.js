@@ -8,14 +8,41 @@ import Aboutus from "./Aboutus";
 import Home from "./Home";
 import Products from "./Products";
 import Services from "./Services";
-import './css/navbar.css';
+import "./css/navbar.css";
 
 export default class NavbarComp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrolled: false,
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll() {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 200 && !this.state.scrolled) {
+      this.setState({ scrolled: true });
+    } else if (scrollY <= 200 && this.state.scrolled) {
+      this.setState({ scrolled: false });
+    }
+  }
   render() {
+    const { scrolled } = this.state;
+    const navbarClass = scrolled ? "scrolled-navbar" : "";
     return (
       <BrowserRouter>
         <div>
-          <Navbar expand="lg" className="bg-body-tertiary make-transaparent">
+          <Navbar expand="lg" className={`fixed-top ${navbarClass}`}>
             <Container>
               <Navbar.Brand href="/">
                 <img
@@ -30,7 +57,7 @@ export default class NavbarComp extends Component {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="me-auto nav-links">
                   <Nav.Link as={Link} to="/">
                     Home
                   </Nav.Link>
@@ -60,7 +87,3 @@ export default class NavbarComp extends Component {
     );
   }
 }
-
-//NAVBAR DARK
-// bg="dark"
-// data-bs-theme="dark"

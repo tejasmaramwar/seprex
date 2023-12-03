@@ -1,15 +1,53 @@
-.make-transaparent{
-    background-color: transparent !important;
-    position: absolute;
-      top: 0;
-      left: 0;
-      height: 100px;
-      width: 100%;
-      z-index: 100;
-
+.make-transaparent {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
 }
-.make-transaparent  a{
-  color:white;
+
+.make-transaparent a {
+  color: #00098d;
   font-size: 20px;
   font-weight: 800;
+  transition: none;
+}
+
+.nav-links {
+  margin-left: 60%;
+}
+
+.nav-links a {
+  color: black ;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+
+.nav-links a:hover {
+  color: rgb(60, 60, 60);
+}
+
+.navbar-brand{
+  font-size: 22px;
+}
+
+.scrolled-navbar {
+  background-color: #00098d !important;
+}
+
+
+@media (max-width: 1400px) {
+  .nav-links {
+    margin-left: 50%;
+  }
+  
+}
+
+@media (max-width: 1200px) {
+  .nav-links {
+    margin-left: 40%;
+  }
+  
 }

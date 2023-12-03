@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import TableCompo from "./TableCompo";
+import { Link } from 'react-router-dom';
 import Cards from "./Cards";
+import products from "./productData";
 
 export default class Products extends Component {
   render() {
@@ -90,6 +92,12 @@ export default class Products extends Component {
       maxHeight: "250px",
       padding: "12px",
     };
+
+    // const products = [
+    //   { id: '1', name: 'Lab/Bench/Pilot Plants ', description: 'Description of Product 1' },
+    //   { id: '2', name: 'Product 2', description: 'Description of Product 2' },
+    //   { id: '3', name: 'Product 3', description: 'Description of Product 3' },
+    // ];
     return (
       <div>
         <div className="products">
@@ -121,18 +129,11 @@ export default class Products extends Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col lg={4} sm={12} md={12}>
-                    {/* <TableCompo data={table1Data} /> */}
-                    <Cards />
+                {products.map((product) => (
+                  <Col key={product.id} lg={4} sm={12} md={12}>
+                    <Cards product={product} />
                   </Col>
-                  <Col lg={4} sm={12} md={12}>
-                    {/* <TableCompo data={table2Data} /> */}
-                    <Cards />
-                  </Col>
-                  <Col lg={4} sm={12} md={12}>
-                    {/* <TableCompo data={table2Data} /> */}
-                    <Cards />
-                  </Col>
+                ))}
                 </Row>
               </Container>
               <div className="imagesbackground">

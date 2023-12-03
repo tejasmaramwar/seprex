@@ -24,8 +24,11 @@ code {
 /* NAVBAR STYLING START */
 
 /* PRODUCTS SECTION START */
+
 .products {
   padding-top: 20px;
+  background-image: url('../seprex_website/Products/frontimage.jpg');
+  opacity: 0.9;
 }
 
 .products .productscontent {
@@ -33,7 +36,7 @@ code {
 }
 
 .imagesbackground {
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
 }
 
 /* ABOUT US SECTION START */

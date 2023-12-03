@@ -9,6 +9,7 @@ import Home from "./Home";
 import Products from "./Products";
 import Services from "./Services";
 import "./css/navbar.css";
+import ProductDetails from "./ProductDetails";
 
 export default class NavbarComp extends Component {
   constructor(props) {
@@ -79,6 +80,7 @@ export default class NavbarComp extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:productId" element={<ProductDetails />} />
             <Route path="/services" element={<Services />} />
             <Route path="/aboutus" element={<Aboutus />} />
           </Routes>

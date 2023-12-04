@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import { Link } from "react-router-dom";
+import "./css/card.css"
 
 
 export default function Cards({ product }) {
@@ -30,7 +31,6 @@ export default function Cards({ product }) {
           transition: "all .1s linear",
           textDecoration: "none",
           backgroundColor: "#cecece",
-          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
           boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"
 
         }}
@@ -48,7 +48,7 @@ export default function Cards({ product }) {
             alt={product.name}
             style={{
               width: "100%",
-              height:"25em",
+              height: "25em",
               objectFit: "cover",
               transition: "transform 0.5s",
               transform: isHovered ? "scale(1.1)" : "scale(1)",
@@ -56,17 +56,7 @@ export default function Cards({ product }) {
           />
         </div>
         <Card.Body
-          style={{
-            backgroundColor: "rgb(13 131 221)",
-            color: "#fff",
-            padding: "10px",
-            transition: "transform 0.5s",
-            transform: isHovered ? "translateY(0)" : "translateY(100%)",
-            position: "absolute",
-            bottom: 0,
-            width: "100%",
-          }}
-        >
+          className="card-body" >
           <Card.Title>{product.name}</Card.Title>
         </Card.Body>
       </Card>

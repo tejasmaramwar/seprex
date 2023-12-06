@@ -6,7 +6,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <div>
+        <div className="carousel-container">
           <Carousel data-bs-theme="dark">
             <Carousel.Item>
               <img
@@ -58,6 +58,26 @@ export default class Home extends Component {
               />
             </Carousel.Item>
           </Carousel>
+          <div className="homePageTextCard">
+            <div className="homePageTextContent">
+              <h5>About Us:</h5>
+              <p>
+                Seprex is started by a team of passionate engineers from
+                renowned institutes in India. Seprex started with the the
+                objective of facilitating the chemical industry in technology
+                transfer, troubleshooting, and process improvement. Seprex is
+                mainly engaged with manufacturing and supply of skid-mounted /
+                modular, semi / fully automated Lab / Bench / Pilot / Demo Scale
+                Plants on a turnkey basis at par with global standards. Seprex
+                also assists in troubleshooting and improvement in production
+                rates, yield, energy efficiency, and quality by rigorous
+                experimentation/process modeling and simulation/advanced process
+                control. Seprex has an in-house pilot scale fixed bed/batch /
+                Continuous reactor and distillation facility, where our client
+                performs preliminary investigation to understand their systems.
+              </p>
+            </div>
+          </div>
         </div>
         <OurCustomer />
       </>

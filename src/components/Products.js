@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import TableCompo from "./TableCompo";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Cards from "./Cards";
 import products from "./productData";
 
 export default class Products extends Component {
   render() {
-
-    const imgStyle = {
-      width: "100%",
-      maxHeight: "250px",
-      padding: "12px",
-    };
     return (
       <div>
         <div className="products">
-
+          <div className="background-overlay">
+            <img
+              src="/images/productsbackground.jpg"
+              alt="Background"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
           <div className="productscontent">
             <div className="firstPlant">
               <Container>

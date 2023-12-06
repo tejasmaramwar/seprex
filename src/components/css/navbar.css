@@ -20,7 +20,7 @@
 }
 
 .nav-links a {
-  color: black ;
+  color: white;
   margin-right: 15px;
   font-weight: bolder;
 }
@@ -35,6 +35,10 @@
 
 .scrolled-navbar {
   background-color: #2b34a8 !important;
+}
+
+.navbar-brand{
+  font-weight: bolder;
 }
 
 

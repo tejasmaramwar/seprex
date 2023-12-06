@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 export default function Aboutus() {
   return (
     <>
-      <div className="aboutus">
+      <div className="aboutus text-center mt-5">
         <div className="aboutustitle">
           <h2>Seprex Private Limited</h2>
           <h5 className="aboutustagline">

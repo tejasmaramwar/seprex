@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./css/services.css";
+import "./css/serviceDetails.css";
 import services from "./servicesdata";
 import ServicesCard from "./ServicesCard";
 
@@ -11,18 +11,18 @@ export default class Services extends Component {
       <div>
         <div className="services">
         <div className="background-overlay">
-            <img
+            {/* <img
               src="/images/servicesbackground.jpg"
               alt="Background"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+            /> */}
           </div>
           <div className="servicescontent">
-          <div className="firstPlant">
+          <div>
               <Container>
                 <Row className="mb-3">
                   <Col lg={12} sm={12} md={12}>
-                    <h2 className="text-center pt-3">Our Products</h2>
+                    <h2 className="text-center pt-3">Our Services</h2>
                   </Col>
                 </Row>
                 <Row>

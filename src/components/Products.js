@@ -11,11 +11,11 @@ export default class Products extends Component {
       <div>
         <div className="products">
           <div className="background-overlay">
-            <img
+            {/* <img
               src="/images/productsbackground.jpg"
               alt="Background"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+            /> */}
           </div>
           <div className="productscontent">
             <div className="firstPlant">

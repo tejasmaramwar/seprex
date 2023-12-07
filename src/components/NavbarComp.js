@@ -55,7 +55,7 @@ export default class NavbarComp extends Component {
                   className="d-inline-block align-top "
                 />
                 <span style={{ marginRight: 20 }}></span>
-                Seprex
+                SEPREX
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">

@@ -35,6 +35,14 @@
   border-radius: 20px;
 }
 
+.homePageTextContent h5{
+  font-size: 22px;
+}
+
+.homePageTextContent p{
+  font-size: 18px;
+}
+
 
 /* .carousel-container {
   position: relative;

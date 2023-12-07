@@ -11,7 +11,6 @@
 .make-transaparent a {
   color: #00098d;
   font-size: 20px;
-  font-weight: 800;
   transition: none;
 }
 
@@ -27,6 +26,9 @@
 
 .nav-links a:hover {
   color: rgb(60, 60, 60);
+  color: #24252a;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out; 
 }
 
 .navbar-brand{
@@ -34,7 +36,8 @@
 }
 
 .scrolled-navbar {
-  background-color: #2b34a8 !important;
+  /* background-color: #2b34a8 !important; */
+  background-color: var(--theme-color) !important;
 }
 
 .navbar-brand{

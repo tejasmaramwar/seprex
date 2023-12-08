@@ -44,7 +44,7 @@ export default function Cards({ product }) {
           }}
         >
           <img
-            src={product.imageSrc}
+            src={product.images[0]}
             alt={product.name}
             style={{
               width: "100%",

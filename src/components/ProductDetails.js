@@ -10,17 +10,20 @@ const ProductDetails = () => {
     return (
         <div className="product-details-container">
             <div className="product-details-image">
-                <img
-                    src={product.imageSrc}
-                    alt={product.name}
-                    style={{ width: '100%' }}
-                />
+               
+                {product.images.map((image, index) => (
+                    <div className='product-image'>
+                        <img
+                            key={index}
+                            src={image}
+                            alt={`${product.name} - Image ${index + 1}`}
+                        />
+                    </div>
+                ))}
             </div>
             <div className="product-details-description">
-                {/* Product details */}
-                <h2>{product.name}</h2>
+                <h2 className='text-center'>{product.name}</h2>
                 <p>{product.description}</p>
-                {/* Add other product details as needed */}
             </div>
         </div>
     )

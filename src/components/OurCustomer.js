@@ -1,5 +1,3 @@
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import React, { Component } from "react";
 import "./css/OurCustomer.css";
 export default class OurCustomer extends Component {

@@ -1,0 +1,22 @@
+.trialfacilitycontainer {
+  padding: 80px 0;
+}
+
+.trialfacilitycontent{
+    padding-top: 30px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.section-image img {
+  max-width: 50%;
+  height: auto;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}

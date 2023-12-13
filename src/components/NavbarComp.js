@@ -11,6 +11,7 @@ import Services from "./Services";
 import "./css/navbar.css";
 import ProductDetails from "./ProductDetails";
 import ServiceDetails from "./ServiceDetails";
+import TrialFacility from "./TrialFacility";
 
 export default class NavbarComp extends Component {
   constructor(props) {
@@ -69,8 +70,11 @@ export default class NavbarComp extends Component {
                   <Nav.Link as={Link} to="/services">
                     Services
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/aboutus">
+                  {/* <Nav.Link as={Link} to="/aboutus">
                     About Us
+                  </Nav.Link> */}
+                  <Nav.Link as={Link} to="/trialfacility">
+                    Trial Facility
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -84,7 +88,8 @@ export default class NavbarComp extends Component {
             <Route path="/products/:productId" element={<ProductDetails />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:serviceId" element={<ServiceDetails />} />
-            <Route path="/aboutus" element={<Aboutus />} />
+            {/* <Route path="/aboutus" element={<Aboutus />} /> */}
+            <Route path="/trialfacility" element={<TrialFacility />} />
           </Routes>
         </div>
       </BrowserRouter>

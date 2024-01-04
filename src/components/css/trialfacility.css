@@ -5,3 +5,8 @@
 .trialfacilitycontent{
     padding-top: 30px;
 }
+
+.trialfacilitycontainer .trialfacilitydesc{
+  text-align: center;
+  margin: 20px 70px 0 70px;
+}

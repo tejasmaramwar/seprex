@@ -63,19 +63,7 @@ export default class Home extends Component {
             <div className="homePageTextContent">
               <h5>About Us:</h5>
               <p>
-                Seprex is started by a team of passionate engineers from
-                renowned institutes in India. Seprex started with the the
-                objective of facilitating the chemical industry in technology
-                transfer, troubleshooting, and process improvement. Seprex is
-                mainly engaged with manufacturing and supply of skid-mounted /
-                modular, semi / fully automated Lab / Bench / Pilot / Demo Scale
-                Plants on a turnkey basis at par with global standards. Seprex
-                also assists in troubleshooting and improvement in production
-                rates, yield, energy efficiency, and quality by rigorous
-                experimentation/process modeling and simulation/advanced process
-                control. Seprex has an in-house pilot scale fixed bed/batch /
-                Continuous reactor and distillation facility, where our client
-                performs preliminary investigation to understand their systems.
+              SEPREX was started by a team of passionate engineers committed to reshaping industries through innovative and efficient processes. From concept to implementation, we specialize in delivering tailor-made solutions for a wide variety of application. At SEPREX we design, manufacture and supply process equipment, lab/bench/pilot/demo units and skid-mounted/modular units on turnkey basis conforming to global standards. SEPREX also assists in troubleshooting and process intensification by rigorous experimentation or modeling and simulation. SEPREX has an in-house pilot scale fixed bed, batch, continuous flow reactor and distillation facility where our customers can conduct preliminary testing to understand their systems. We want to be known for quality products and services at the best cost to our customers, explore our digital space to see our commitment to quality, sustainability and tailor-made solutions. Join us in shaping the future of this dynamic sector SEPREX 
               </p>
             </div>
           </div>

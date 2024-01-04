@@ -1,57 +1,54 @@
 .product-details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 1rem;
+  margin: 6rem 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 30px;
 }
 
-.product-details-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.first-part {
+  text-align: justify;
+  align-items: center;
+  padding: 20px;
 }
 
-.product-image {
-    margin: 5px;
+.second-part {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.product-image img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.carousel-control-prev-icon {
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; */
+  filter: invert(100%);
+}
 
+.carousel-control-next-icon {
+  /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; */
+  filter: invert(100%);
+}
+
+
+/* .product-details-container {
+  align-items: center;
+  margin-top: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  padding-top: 50px;
 }
 
 .product-details-description {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  padding-top: 40px !important;
 }
 
 .product-details-description p {
-    text-align: justify;
-}
+  text-align: justify;
+} */
 
-@media only screen and (min-width: 768px) {
-    .product-details-image {
-        justify-content: space-evenly;
-    }
+/* @media only screen and (min-width: 768px) {
+  .product-details-description {
+    padding: 5rem;
+  }
 
-    .product-image {
-        flex: 1;
-        max-width: calc(33.333% - 10px);
-    }
-
-    .product-details-description {
-        padding: 5rem;
-    }
-
-    .product-details-description p {
-        padding: 3rem;
-    }
-
-
-}
+  .product-details-description p {
+    padding: 3rem;
+  }
+} */

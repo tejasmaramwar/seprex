@@ -20,6 +20,7 @@
   background: white;
   white-space: nowrap;
   position: relative;
+  width:95vw;
 }
 
 .logos:before,

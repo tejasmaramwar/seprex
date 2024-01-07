@@ -30,6 +30,7 @@
 .homePageTextCard {
   position: absolute;
   top: 50%;
+  font-size: 1vw;
   right: 10%;
   padding: 26px !important;
   text-align: justify;
@@ -40,16 +41,16 @@
   z-index: 1;
   border-radius: 10px;
   box-shadow: rgba(255, 250, 250, 0.56) 0px 22px 70px 4px;
-  visibility: hidden;
+  /* visibility: hidden; */
 
 }
 
 .homePageTextContent h5{
-  font-size: 22px;
+  font-size: 2vw;
 }
 
 .homePageTextContent p{
-  font-size: 18px;
+  font-size: 1.2vw;
 }
 
 

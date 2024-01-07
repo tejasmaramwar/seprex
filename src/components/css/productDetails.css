@@ -25,30 +25,32 @@
   filter: invert(100%);
 }
 
+.accordion {
+  width: 50%;
+  padding: 50px;
+  margin: auto;
+}
 
-/* .product-details-container {
-  align-items: center;
-  margin-top: 5rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 1rem;
+.fourth-part{
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.product-details-description {
-  width: 100%;
-  padding-top: 40px !important;
-}
-
-.product-details-description p {
+.promisecontent{
+  padding: 10px;
   text-align: justify;
-} */
+}
 
-/* @media only screen and (min-width: 768px) {
-  .product-details-description {
-    padding: 5rem;
-  }
+.promisecontent1{
+  padding: 50px;
+  text-align: justify;
+}
 
-  .product-details-description p {
-    padding: 3rem;
+@media (max-width: 900px) {
+  .accordion {
+    width: 100%;
   }
-} */
+  .fourth-part{
+    padding: 10px;
+  }
+}

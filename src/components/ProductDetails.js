@@ -2,7 +2,16 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import products from "./productData";
 import "./css/productDetails.css";
-import { Col, Container, Row, Carousel, CarouselItem } from "react-bootstrap";
+import {
+  Col,
+  Container,
+  Row,
+  Carousel,
+  AccordionItem,
+  AccordionHeader,
+} from "react-bootstrap";
+import Accordion from "react-bootstrap/Accordion";
+import AccordionBody from "react-bootstrap/esm/AccordionBody";
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -42,9 +51,14 @@ const ProductDetails = () => {
           <h4 className="text-center" style={{ fontWeight: 600 }}>
             {product.sectiontitle}
           </h4>
-          <Carousel style={{ backgroundColor: '#f0f0f0', width: '80%', margin: 'auto' }}>
+          <Carousel
+            style={{ backgroundColor: "#f0f0f0", width: "80%", margin: "auto" }}
+          >
             {product.featuresTitle.map((text, index) => (
-              <Carousel.Item key={index} style={{ backgroundColor: '#ffffff', padding: '20px' }}>
+              <Carousel.Item
+                key={index}
+                style={{ backgroundColor: "#ffffff", padding: "20px" }}
+              >
                 <div className="d-flex flex-column align-items-center">
                   <h2>{text}</h2>
                   <p>{product.features[index]}</p>
@@ -53,14 +67,46 @@ const ProductDetails = () => {
             ))}
           </Carousel>
         </div>
-        {/* <div className="product-details-image">
-          {product.images.map((image, index) => (
-            <div className="product-image">
-              <img key={index} src={image} alt="Products" />
-            </div>
-          ))}
+        <div className="third-part" style={{ backgroundColor: product.color }}>
+          <Accordion alwaysOpen>
+            <AccordionItem>
+              <AccordionHeader className="d-flex justify-content-center">
+                Industries we serve!
+              </AccordionHeader>
+              <AccordionBody>
+                <ul>
+                  {product.industriesData.map((text, index) => (
+                    <li key={text}>{text}</li>
+                  ))}
+                </ul>
+              </AccordionBody>
+            </AccordionItem>
+          </Accordion>
         </div>
-        <p>{product.description}</p> */}
+        <div className="fourth-part">
+          {product.hasOwnProperty("fourthPartImage") ? (
+            <Container>
+              <Row>
+                <Col lg={8} md={6} sm={12}>
+                  <img
+                    src="/images/pilotplantfeatures2.png"
+                    alt="Content"
+                    style={{ maxWidth: "100%", height: "auto" }}
+                  />
+                </Col>
+                <Col lg={4} md={6} sm={12}>
+                  <h4>Our Promise:</h4>
+                  <p className="promisecontent">{product.fourthPartContent}</p>
+                </Col>
+              </Row>
+            </Container>
+          ) : (
+            <div>
+              <h1 className="text-center">{product.fourthPartTitle}</h1>
+              <p className="promisecontent1">{product.fourthPartContent}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

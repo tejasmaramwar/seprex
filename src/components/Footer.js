@@ -1,9 +1,8 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import "./css/footer.css";
+import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import Button from "react-bootstrap/Button";
+import "./css/footer.css";
 
 export default function AppFooter() {
   const handleFormSubmit = () => {
@@ -62,6 +61,14 @@ export default function AppFooter() {
               aria-label="Amount (to the nearest dollar)"
               placeholder="Enter your email"
             />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <Form.Control
+              id="phoneInput"
+
+              placeholder="Phone Number..."
+            />
+
           </InputGroup>
           <InputGroup>
             <Form.Control

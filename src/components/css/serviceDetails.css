@@ -1,64 +1,53 @@
-.services .servicescontent h2{
-    text-align: center;
-    padding-top: 50px !important;
-    padding-bottom: 20px;
-}
-
 .service-details-container {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #9edeeb;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 6rem 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 30px;
 }
 
-.service-details-image {
-    width: 50%;
+.middle-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 30px;
 }
 
-.service-details-image img {
-    padding: 5rem;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+.middle-image img {
+  width: 80%;
+  height: auto;
 }
 
-.service-details-description {
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 5rem;
-}
-.service-details-description p{
-    padding: 3rem;
-    text-align: justify;
+.second-part {
+  margin: 0 !important;
+  background-color: #9edeeb;
 }
 
-/* Responsive styles for mobile */
-@media (max-width: 767px) {
-    .service-details-container {
-        flex-direction: column;
-        /* Switch to column layout for mobile */
-    }
+.third-part {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 40px 20px;
+}
 
-    .service-details-image,
-    .service-details-description {
-        width: 100%;
-        /* Take up full width for mobile */
-    }
+.third-part .whychoose {
+  margin: 20px;
+  padding: 30px;
+}
 
-    .service-details-image img {
-        padding: 1rem;
-        width: 100%;
-        height: 100%;
-    }
+.third-part .third-steps{
+  width: 100%;
+  margin: 0;
+  background-color: #9edeeb;
+  padding: 30px;
+}
 
-    .service-details-description{
-        padding: 0;
-    }
-    .service-details-description p{
-        padding: 1rem;
-    }
+.third-part .third-steps .container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .third-part .whychoose {
+    margin: 10px;
+    padding: 10px;
+  }
 }

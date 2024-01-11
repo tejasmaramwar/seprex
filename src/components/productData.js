@@ -4,12 +4,8 @@ const products = [
     name: "Lab/Bench/Pilot Plants",
     description: `Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost.
     Welcome to SEPREX, where innovation takes flight through our state-of-the-art pilot plants! We specialize in designing and delivering state-of-the-art pilot plants that serve as launch pads for your ground-breaking ideas and projects. The important elements of a good lab/bench/pilot plant are flexibility in quickly changing or adding accessories/equipment and safety. SEPREX has the experience and expertise to build safe, flexible and adaptable lab/bench/pilot plants. The SEPREX team works with customers from the outset to understand their objectives, which are used to size, design, construct and operate the unit with the appropriate level of automation and control. Experienced technicians ensure that the plant will run over a range of real process conditions to meet customer expectations.`,
-    image: "/images/pilotplant.jpg",
-    extraimages: [
-      "/images/pilotplant.jpg",
-      "/images/pilotplant2.jpg",
-      "/images/pilotplant3.jpg",
-    ],
+    image: "/images/products/pilotplant.jpg",
+    extraimages: [],
     color: "#7BD3EA",
     sectiontitle: "Embark on Innovation with Our Pilot Plants:",
     featuresTitle: [
@@ -39,7 +35,7 @@ const products = [
       "And more..!",
     ],
     fourthPartTitle: "Our Promise",
-    fourthPartImage: "/images/pilotplantfeatures2.jpg",
+    fourthPartImage: "/images/products/pilotplantfeatures2.png",
     fourthPartContent:
       "At SEPREX, we are dedicated to fostering a culture of innovation. Our team of experts is committed to supporting your journey from concept to commercialization, providing the tools and expertise needed to turn your ideas into reality.Visit our website to discover the full range of pilot plant solutions we offer and learn how SEPREX can be your trusted partner in pushing the boundaries of the possible. Thank you for choosing us to be a part of your innovation journey.",
   },
@@ -47,12 +43,8 @@ const products = [
     id: "2",
     name: "Modular/Skid-Mounted Plants",
     description: `We specialize in providing innovative, efficient and cost effective solutions to meet your industrial requirements. Our modular and skid-mounted plants are designed to revolutionize the way you execute projects, providing flexibility, scalability and rapid deployment.`,
-    image: "/images/pilotplant.jpg",
-    extraimages: [
-      "/images/pilotplant.jpg",
-      "/images/pilotplant2.jpg",
-      "/images/pilotplant3.jpg",
-    ],
+    image: "/images/products/equipment.jpg",
+    extraimages: [],
     color: "#7BD3EA",
     sectiontitle: "Why Choose Our Modular/Skid-Mounted Plants?",
     featuresTitle: [
@@ -89,12 +81,8 @@ const products = [
     id: "3",
     name: "Process Equipment",
     description: `Welcome to SEPREX, an emerging force that is ready to redefine excellence in process equipment solutions. As a growing entity, we have embarked on a journey of setting new standards in accuracy, reliability and innovation, committed to becoming a trusted partner for industries seeking cutting-edge solutions.`,
-    image: "/images/pilotplant.jpg",
-    extraimages: [
-      "/images/pilotplant.jpg",
-      "/images/pilotplant2.jpg",
-      "/images/pilotplant3.jpg",
-    ],
+    image: "/images/products/skidmounted.jpg",
+    extraimages: [],
     color: "#7BD3EA",
     sectiontitle: "Embarking on Excellence in Process Equipment:",
     featuresTitle: [

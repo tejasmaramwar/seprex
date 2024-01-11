@@ -74,7 +74,7 @@ const ServiceDetails = () => {
         {service.hasOwnProperty("powerofCFDtitle") ? (
           <div className="third-part">
             <div>
-              <section>
+              <section className="explorePower">
                 <h4 className="text-center" style={{ fontWeight: 600 }}>
                   {service.powerofCFDtitle}
                 </h4>
@@ -116,7 +116,7 @@ const ServiceDetails = () => {
         {service.hasOwnProperty("elevateTitle") ? (
           <div className="third-part">
             <div>
-              <section>
+              <section className="elevate">
                 <h4 className="text-center" style={{ fontWeight: 600 }}>
                   {service.elevateTitle}
                 </h4>

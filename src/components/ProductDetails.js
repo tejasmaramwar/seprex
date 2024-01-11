@@ -92,7 +92,7 @@ const ProductDetails = () => {
             </div>
           )}
         </div>
-        <div className="third-part" style={{ backgroundColor: product.color }}>
+        <div className="third-part">
           <Accordion alwaysOpen>
             <AccordionItem>
               <AccordionHeader className="d-flex justify-content-center">

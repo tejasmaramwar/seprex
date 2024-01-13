@@ -4,14 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import { Route, Link, BrowserRouter as Router, Routes } from "react-router-dom";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Aboutus from "./Aboutus";
 import Home from "./Home";
-import Products from "./Products";
-import Services from "./Services";
-import "./css/navbar.css";
 import ProductDetails from "./ProductDetails";
+import Products from "./Products";
 import ServiceDetails from "./ServiceDetails";
+import Services from "./Services";
 import TrialFacility from "./TrialFacility";
+import "./css/navbar.css";
 
 export default class NavbarComp extends Component {
   constructor(props) {
@@ -45,7 +44,7 @@ export default class NavbarComp extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Navbar expand="lg" className={`fixed-top ${navbarClass}`}>
+          <Navbar collapseOnSelect expand="lg" className={`fixed-top ${navbarClass}`}>
             <Container>
               <Navbar.Brand href="/">
                 <img
@@ -61,19 +60,19 @@ export default class NavbarComp extends Component {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto nav-links">
-                  <Nav.Link as={Link} to="/">
+                  <Nav.Link eventKey="1"  as={Link} to="/">
                     Home
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/products">
+                  <Nav.Link eventKey="2"  as={Link} to="/products">
                     Products
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/services">
+                  <Nav.Link eventKey="2"  as={Link} to="/services">
                     Services
                   </Nav.Link>
                   {/* <Nav.Link as={Link} to="/aboutus">
                     About Us
                   </Nav.Link> */}
-                  <Nav.Link as={Link} to="/trialfacility">
+                  <Nav.Link eventKey="2"  as={Link} to="/trialfacility">
                     Trial Facility
                   </Nav.Link>
                 </Nav>

@@ -30,7 +30,6 @@
 .homePageTextCard {
   position: absolute;
   top: 50%;
-  font-size: 1vw;
   right: 10%;
   padding: 26px !important;
   text-align: justify;
@@ -46,11 +45,11 @@
 }
 
 .homePageTextContent h5{
-  font-size: 2vw;
+  font-size: 21px;
 }
 
 .homePageTextContent p{
-  font-size: 1.2vw;
+  font-size: 17px;
 }
 
 

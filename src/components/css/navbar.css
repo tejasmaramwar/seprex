@@ -1,8 +1,12 @@
 .make-transaparent {
-  background-color: transparent !important;
+  background-color: rgba(255,255,255,0.1) !important;
+  backdrop-filter: blur(10px);
   position: absolute;
   top: 0;
   left: 0;
+  background: rgba( 255, 255, 255, 0.5) !important;
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 ) !important;
+  backdrop-filter: blur(50px) !important;
   height: 100px;
   width: 100%;
   z-index: 100;
@@ -28,7 +32,7 @@
   color: rgb(60, 60, 60);
   color: #24252a;
   transform: scale(1.2);
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease-in-out;
 }
 
 .navbar-brand{
@@ -45,17 +49,28 @@
   color: #00098d !important;
 }
 
-
+@media (max-width:992px){
+  .navbar{
+    color: black;
+    text-align: justify;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+}
 @media (max-width: 1400px) {
   .nav-links {
     margin-left: 50%;
   }
-  
+
 }
 
 @media (max-width: 1200px) {
   .nav-links {
     margin-left: 40%;
   }
-  
+
 }

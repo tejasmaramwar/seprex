@@ -40,7 +40,7 @@ export default function ServicesCard({ service }) {
           }}
         >
           <img
-            src={service.imageSrc}
+            src={service.image}
             alt={service.name}
             style={{
               width: "100%",

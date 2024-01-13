@@ -14,7 +14,7 @@ export default class TrialFacility extends Component {
           <div className="trialfacilitycontent">
             <Trialfacilitycard
               title="Pilot Scale Fixed Bed Reactor unit"
-              image="./images/pilotplant.jpg"
+              image="./images/trialfacility/pilotplant3.jpg"
               text={[
                 "Reactor Volume - 10 ml to 100 ml",
                 "Reactor Temperature - Maximum 600 ◦C",
@@ -27,7 +27,7 @@ export default class TrialFacility extends Component {
             />
             <Trialfacilitycard
               title="Pilot Scale Distillation unit"
-              image="./images/pilotplant.jpg"
+              image="./images/trialfacility/distillationunit.png"
               text={[
                 "Mode: Batch as well as continuous",
                 "Reboiler Volume - 20 litre",
@@ -41,7 +41,7 @@ export default class TrialFacility extends Component {
             />
             <Trialfacilitycard
               title="Pilot Scale Batch Reactor unit"
-              image="./images/pilotplant.jpg"
+              image="./images/trialfacility/reactor.jpg"
               text={[
                 "Reactor Volume - 85 liters",
                 "Reactor Temperature - Maximum 180 ◦C",
@@ -53,7 +53,7 @@ export default class TrialFacility extends Component {
             />
             <Trialfacilitycard
               title="Pilot Scale Continuous Flow Reactor unit"
-              image="./images/pilotplant.jpg"
+              image="./images/trialfacility/flowunit.png"
               text={[
                 "Reactor Volume - 5 liters",
                 "Reactor Temperature - Maximum 180 ◦C",

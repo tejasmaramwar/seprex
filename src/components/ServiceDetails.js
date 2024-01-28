@@ -33,7 +33,7 @@ const ServiceDetails = () => {
       <div className="service-details-content">
         <div className="first-part">
           <Container>
-            <Row>
+            <Row className="align-items-center">
               <Col lg={6} md={5}>
                 <img
                   src={service.image}
@@ -153,7 +153,7 @@ const ServiceDetails = () => {
               </section>
               <section className="third-steps">
                 <Container>
-                  <Row>
+                  <Row className="align-items-center">
                     <Col lg={6} md={12} sm={12}>
                       <h4>
                         A process improvement or troubleshooting assignment

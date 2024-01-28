@@ -53,7 +53,7 @@ const ProductDetails = () => {
       <div className="product-details-content">
         <div className="first-part">
           <Container>
-            <Row>
+            <Row className="align-items-center">
               <Col md={5}>
                 <img
                   src={product.image}
@@ -67,28 +67,28 @@ const ProductDetails = () => {
             </Row>
           </Container>
         </div>
-
         <div className="fourth-part">
           {product.hasOwnProperty("fourthPartImage") ? (
-            <Container>
-              <Row>
-                <Col lg={8} md={6} sm={12}>
-                  <img
-                    src={product.fourthPartImage}
-                    alt="Content"
-                    style={{ maxWidth: "100%", height: "auto" }}
-                  />
-                </Col>
-                <Col lg={4} md={6} sm={12}>
-                  <h4>Our Promise:</h4>
-                  <p className="promisecontent">{product.fourthPartContent}</p>
-                </Col>
-              </Row>
-            </Container>
+            <div>
+              <img
+                src={product.fourthPartImage}
+                alt="Content"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  width: "75%",
+                }}
+              />
+              <h1 className="text-center">{product.fourthPartTitle}</h1>
+              <p className="promisecontent">{product.fourthPartContent}</p>
+            </div>
           ) : (
             <div>
               <h1 className="text-center">{product.fourthPartTitle}</h1>
-              <p className="promisecontent1">{product.fourthPartContent}</p>
+              <p className="promisecontent">{product.fourthPartContent}</p>
             </div>
           )}
         </div>

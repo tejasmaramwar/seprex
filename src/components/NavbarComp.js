@@ -50,11 +50,11 @@ export default class NavbarComp extends Component {
                 <img
                   alt=""
                   src="/images/weblogo.png"
-                  width="30"
-                  height="30"
+                  width="55"
+                  height="45"
                   className="d-inline-block align-top "
                 />
-                <span style={{ marginRight: 20 }}></span>
+                <span style={{ marginRight: 10 }}></span>
                 SEPREX
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,65 +1,68 @@
 import React, { useState } from "react";
-import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
 import { Link } from "react-router-dom";
-import "./css/card.css"
+import "./css/card.css";
+import { Row, Col, Card } from "react-bootstrap";
 
-
-export default function Cards({ product }) {
-
-
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
+export default function Cards({ product, reverse }) {
   return (
-    <Link to={`/products/${product.id}`} style={{ textDecoration: 'none' }}>
-      <Card
-        className="cardborder mb-5"
-        style={{
-          width: "100%",
-          border: "1px solid rgba(0,0,0,.2)",
-          overflow: 'hidden',
-          height: "25em",
-          borderRadius: 3,
-          transition: "all .1s linear",
-          textDecoration: "none",
-          backgroundColor: "#cecece",
-          boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px"
-
-        }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div
-          style={{
-            height: "",
-            overflow: "hidden",
-          }}
-        >
-          <img
-            src={product.image}
-            alt={product.name}
-            style={{
-              width: "100%",
-              height: "25em",
-              objectFit: "cover",
-              transition: "transform 0.5s",
-              transform: isHovered ? "scale(1.1)" : "scale(1)",
-            }}
-          />
-        </div>
-        <Card.Body
-          className="card-body" >
-          <Card.Title>{product.name}</Card.Title>
-        </Card.Body>
-      </Card>
-    </Link >
+    <Row className="mb-4">
+      {reverse ? (
+        <>
+          <Col className="productSingleSentenceCol" lg={6} md={12} sm={12}>
+            <Card bg="transparent" text="white" className="mb-2">
+              <Card.Body>
+                <Card.Title>{product.name}</Card.Title>
+                <Card.Text>{product.productSingleSentence}</Card.Text>
+                <Link className="learnMore" to={`/products/${product.id}`}>
+                  <p>
+                    Learn More <span className="learnMoreArrow">&gt;</span>
+                  </p>
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={6} md={12} sm={12}>
+            <img
+              src={product.image}
+              alt={product.name}
+              className="img-fluid"
+              style={{
+                width: "100%",
+                height: "25rem",
+                objectFit: "fill",
+              }}
+            />
+          </Col>
+        </>
+      ) : (
+        <>
+          <Col lg={6} md={12} sm={12}>
+            <img
+              src={product.image}
+              alt={product.name}
+              className="img-fluid"
+              style={{
+                width: "100%",
+                height: "25rem",
+                objectFit: "fill",
+              }}
+            />
+          </Col>
+          <Col className="productSingleSentenceCol" lg={6} md={12} sm={12}>
+            <Card bg="transparent" text="white" className="mb-2">
+              <Card.Body>
+                <Card.Title>{product.name}</Card.Title>
+                <Card.Text>{product.productSingleSentence}</Card.Text>
+                <Link className="learnMore" to={`/products/${product.id}`}>
+                  <p>
+                    Learn More <span className="learnMoreArrow">&gt;</span>
+                  </p>
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
+        </>
+      )}
+    </Row>
   );
 }

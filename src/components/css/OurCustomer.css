@@ -4,7 +4,13 @@
 .padding_to_header {
   padding: 15px 0;
 }
-
+.text-colour{
+  text-align: center;
+  padding-top: 60px;
+  color: #ff9635;
+  font-weight: bold;
+  font-size: 40px;
+}
 @keyframes slide {
   from {
     transform: translateX(10%);
@@ -17,7 +23,7 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: white;
+  background: #212121;
   white-space: nowrap;
   position: relative;
   width:95vw;
@@ -35,12 +41,12 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #212121);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #212121);
 }
 
 .logos:hover .logos-slide {

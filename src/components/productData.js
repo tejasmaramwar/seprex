@@ -2,6 +2,7 @@ const products = [
   {
     id: "1",
     name: "Lab/Bench/Pilot Plants",
+    productSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Pilot Plants.",
     description: `Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost.
     Welcome to SEPREX, where innovation takes flight through our state-of-the-art pilot plants! We specialize in designing and delivering state-of-the-art pilot plants that serve as launch pads for your ground-breaking ideas and projects. The important elements of a good lab/bench/pilot plant are flexibility in quickly changing or adding accessories/equipment and safety. SEPREX has the experience and expertise to build safe, flexible and adaptable lab/bench/pilot plants. The SEPREX team works with customers from the outset to understand their objectives, which are used to size, design, construct and operate the unit with the appropriate level of automation and control. Experienced technicians ensure that the plant will run over a range of real process conditions to meet customer expectations.`,
     image: "/images/products/pilotplant.jpg",
@@ -42,6 +43,7 @@ const products = [
   {
     id: "2",
     name: "Modular/Skid-Mounted Plants",
+    productSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Skid Mounted Plants.",
     description: `We specialize in providing innovative, efficient and cost effective solutions to meet your industrial requirements. Our modular and skid-mounted plants are designed to revolutionize the way you execute projects, providing flexibility, scalability and rapid deployment.`,
     image: "/images/products/equipment.jpg",
     extraimages: [],
@@ -80,6 +82,7 @@ const products = [
   {
     id: "3",
     name: "Process Equipment",
+    productSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Process Equipment Plants.",
     description: `Welcome to SEPREX, an emerging force that is ready to redefine excellence in process equipment solutions. As a growing entity, we have embarked on a journey of setting new standards in accuracy, reliability and innovation, committed to becoming a trusted partner for industries seeking cutting-edge solutions.`,
     image: "/images/products/skidmounted.jpg",
     extraimages: [],

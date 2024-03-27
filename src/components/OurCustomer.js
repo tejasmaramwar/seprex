@@ -4,7 +4,7 @@ export default class OurCustomer extends Component {
   render() {
     return (
       <div className="padding_to_section">
-        <h1 className="text-center">Our Clients</h1>
+        <h1 className="text-colour">Our Clients</h1>
         <div className="logos">
           <div className="logos-slide">
             <img src="/images/clients/alkyl.png" alt=""/>

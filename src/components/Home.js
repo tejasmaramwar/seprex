@@ -35,8 +35,10 @@ const Hero = () => {
       <div className="flexColStart hero-left">
         <div className="hero-title">
           <div className="orange-circle" />
-          SEPREX, led by passionate engineers, redefines industries with innovative processes.<br /> We specialize in tailored solutions, from equipment design to troubleshooting, adhering to global standards. 
-          <br />Our in-house pilot facility enables comprehensive system testing. <br />Explore our commitment to quality, sustainability, and custom solutions.<br /><br />Join us in shaping the future with SEPREX.
+          {/* SEPREX, led by passionate engineers, redefines industries with innovative processes.<br /> We specialize in tailored solutions, from equipment design to troubleshooting, adhering to global standards. 
+          <br />Our in-house pilot facility enables comprehensive system testing. <br />Explore our commitment to quality, sustainability, and custom solutions.<br /><br />Join us in shaping the future with SEPREX. */}
+          <h1>About Us</h1>
+          Seprex is started by a team of passionate engineers from renowned institutes in India. Seprex started with the objective of facilitating the chemical industry in technology transfer, troubleshooting and process improvement. Seprex is mainly engaged with manufacturing and supply of skid-mounted/modular, semi/fully automated Lab/Bench/Pilot/Demo Scale Plants on a turnkey basis at par with global standards. Seprex also assists in troubleshooting and improvement in production rates, yield, energy efficiency and quality by rigorous experimentation/process modeling and simulation/advanced process control. Seprex has an in-house pilot scale fixed bed/batch / Continuous reactor and distillation facility, where our client performs preliminary investigation to understand their systems.  
           <motion.h1
             initial={{ y: "20rem", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

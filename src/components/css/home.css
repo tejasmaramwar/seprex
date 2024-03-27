@@ -74,8 +74,9 @@
 
 .hero-left {
   width: 50%; /* Adjust width as needed */
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 100px;
+  margin-right: 50px;
   
 }
 
@@ -85,6 +86,7 @@
 }
 
 .hero-title {
+  text-align: justify;
   color: white;
   position: relative;
   z-index: 1;
@@ -92,18 +94,18 @@
 
 .hero-title > h1 {
   font-weight: 600;
-  font-size: 3.8rem;
+  font-size: 2rem;
   line-height: 4rem;
 }
 
 .orange-circle {
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   background: var(--orange-gradient);
   border-radius: 999px;
   position: absolute;
-  right: 28%;
-  top: -10%;
+  right: 55%;
+  top: 10%;
   z-index: -1;
 }
 

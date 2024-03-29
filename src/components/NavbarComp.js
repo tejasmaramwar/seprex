@@ -32,9 +32,9 @@ export default class NavbarComp extends Component {
   handleScroll() {
     const scrollY = window.scrollY;
 
-    if (scrollY > 200 && !this.state.scrolled) {
+    if (scrollY > 100 && !this.state.scrolled) {
       this.setState({ scrolled: true });
-    } else if (scrollY <= 200 && this.state.scrolled) {
+    } else if (scrollY <= 100 && this.state.scrolled) {
       this.setState({ scrolled: false });
     }
   }

@@ -1,5 +1,4 @@
 import React, { Component, useEffect, useState} from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Competencies from "./Competencies";
 import OurCustomer from "./OurCustomer";
 import "./css/home.css";
@@ -89,57 +88,3 @@ export default class Home extends Component {
     );
   }
 }
-
- {/* <div className="carousel-container">
-          <Carousel data-bs-theme="dark">
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/1.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/2.jpg"
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/3.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/4.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/5.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/6.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/7.jpg"
-              />
-            </Carousel.Item>
-          </Carousel>
-          
-        </div> */}

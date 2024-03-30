@@ -27,31 +27,32 @@ const ProductDetails = () => {
 
   return (
     <div className="product-details-container">
-      <div className="second-part">
-        <h4 className="text-center" style={{ fontWeight: 600 }}>
-          {product.sectiontitle}
-        </h4>
-        <Carousel
-          style={{ backgroundColor: "#f0f0f0", width: "90%", margin: "auto" }}
-        >
-          {product.featuresTitle.map((text, index) => (
-            <Carousel.Item
-              key={index}
-              style={{ backgroundColor: "#ffffff", padding: "20px" }}
-            >
-              <div className="d-flex flex-column align-items-center">
-                <h2>{text}</h2>
-                <p>{product.features[index]}</p>
-              </div>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
       <div className="product-details-header">
         <h2 className="text-center">{product.name}</h2>
       </div>
       <div className="product-details-content">
-        <div className="first-part">
+        <div className="productFeatuesCarousel">
+          <h4 className="text-center" style={{ fontWeight: 600 }}>
+            {product.sectiontitle}
+          </h4>
+          <Carousel
+            style={{ backgroundColor: "#f0f0f0", width: "90%", margin: "auto" }}
+          >
+            {product.featuresTitle.map((text, index) => (
+              <Carousel.Item
+                key={index}
+                style={{ backgroundColor: "#ffffff", padding: "20px" }}
+              >
+                <div className="d-flex flex-column align-items-center">
+                  <h2>{text}</h2>
+                  <p>{product.features[index]}</p>
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+
+        <div className="productDescription">
           <Container>
             <Row className="align-items-center">
               <Col md={5}>
@@ -92,7 +93,7 @@ const ProductDetails = () => {
             </div>
           )}
         </div>
-        <div className="third-part">
+        <div className="productIndustriesServe">
           <Accordion alwaysOpen>
             <AccordionItem>
               <AccordionHeader className="d-flex justify-content-center">

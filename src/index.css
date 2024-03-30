@@ -101,26 +101,14 @@
   padding-top: 30px;
 }
 
+.products .products-title{
+  color: white;
+  padding-top: 70px;
+}
+
 .row{
   padding-top: 30px;
 }
-
-.background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  /* background-color: black; */
-  z-index: -1;
-}
-
-.products .productscontent {
-  position: relative;
-  z-index: 1;
-}
-
 
 /* ABOUT US SECTION START */
 .aboutustitle {

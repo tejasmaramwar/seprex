@@ -1,16 +1,19 @@
 .padding_to_section {
   padding: 50px 0;
 }
+
 .padding_to_header {
   padding: 15px 0;
 }
-.text-colour{
+
+.text-colour {
   text-align: center;
-  padding-top: 60px;
-  color: #ff9635;
+  padding-top: 20px;
+  color: #4c4c4c;
   font-weight: bold;
   font-size: 40px;
 }
+
 @keyframes slide {
   from {
     transform: translateX(10%);
@@ -23,10 +26,10 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: #212121;
+  background: #ffffff;
   white-space: nowrap;
   position: relative;
-  width:95vw;
+  width: 95vw;
 }
 
 .logos:before,
@@ -41,16 +44,12 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #212121);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #212121);
-}
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
 }
 
 .logos-slide {

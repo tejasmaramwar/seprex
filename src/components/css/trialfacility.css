@@ -1,12 +1,84 @@
 .trialfacilitycontainer {
   padding: 100px 0;
+  background-color: #ffffff;
+}
+.Heading {
+  color: #4c4c4c;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.trialfacilitycontent{
-    padding-top: 30px;
+.text-shadow {
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4); 
 }
 
-.trialfacilitycontainer .trialfacilitydesc{
+.trialfacilitydesc {
+  background-image: url('../../../public/images/clawImg.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  margin: 20px 70px 0 70px;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #4c4c4c;
 }
+
+.trialfacilitycontent {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4c4c4c;
+}
+
+.text-container {
+  text-align: center;
+  background-image: url('../../../public/images/textback.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4c4c4c;
+}
+
+
+.trialfacilitycard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 300px;
+  margin: 20px;
+}
+
+.trialfacilitycard h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trialfacilitycard img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.trialfacilitycard .list-group {
+  padding: 10px;
+}
+
+.trialfacilitycard .list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
+.trialfacilitycard .list-group-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.custom-container {
+  margin-bottom: 40px; /* Adjust margin as needed */
+}
+

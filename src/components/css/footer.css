@@ -1,7 +1,7 @@
 footer {
   padding: 50px 50px;
-  background-color: #212121;
-  color: white;
+  background-color: #ffffff;
+  color: ff9a3d;
 }
 
 .footerMain {
@@ -9,9 +9,11 @@ footer {
   align-items: center;
 }
 
-.footerRight,
+.footerRight{
+  width: 30%;
+  margin-left: 250px;
+}
 .footerLeft {
-  flex: 2;
   margin-right: 10px;
   width: 50%;
 }
@@ -39,7 +41,7 @@ footer {
 
 .submitButton {
   background-color: #ff9635;
-  border-color: #212121;
+  border-color: #ffffff;
   margin-top: 10px;
 }
 

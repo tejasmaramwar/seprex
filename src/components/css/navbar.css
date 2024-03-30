@@ -1,5 +1,5 @@
 .make-transaparent {
-  background-color: #212121 !important;
+  background-color: #ffffff !important;
   box-shadow: none !important;
   height: 100px;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .make-transaparent a {
-  color: #ff9a3d  ; 
+  color: #ff9a3d !important;
   font-size: 15px;
   transition: none;
 }
@@ -20,36 +20,48 @@
 .nav-links a {
   margin-right: 20px;
   font-weight: bolder;
-  color: white;
+  color: black;
+  
 }
 
-.nav-links a:hover {
+.navBarLinks a:hover {
   color: #ff9a3d;
-  color: black;
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+.navBarLinks{
+  color: #ff6600 !important;
+}
+
+.nav-links .nav-link.active {
+  color: #ff9a3d;
 }
 
 .navbar-brand {
-  font-size: 40px; /* Change font size to 25px */
+  font-size: 40px;
   font-weight: bold;
-  color: #ffffff !important; /* Change navbar brand text color to white */
+  color: #ff6600 ;
 }
 
+#navDist{
+margin-left: 10px;
+}
 .scrolled-navbar {
-  background-color: #302e2e !important;
+  background-color: rgba(48, 46, 46, 0.8) !important;
+  backdrop-filter: blur(10px);
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .navbar {
     color: black;
     text-align: justify;
     width: 100%;
-    background: #302e2e; /* Keep background color static */
+    background: #302e2e;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Remove backdrop-filter */
   }
 }
 

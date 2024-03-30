@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import { Route, Link, BrowserRouter as Router, Routes } from "react-router-dom";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Home";
 import ProductDetails from "./ProductDetails";
 import Products from "./Products";
@@ -12,7 +11,7 @@ import Services from "./Services";
 import TrialFacility from "./TrialFacility";
 import "./css/navbar.css";
 
-export default class NavbarComp extends Component {
+class NavbarComp extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,17 +29,14 @@ export default class NavbarComp extends Component {
   }
 
   handleScroll() {
-    const scrollY = window.scrollY;
-
-    if (scrollY > 200 && !this.state.scrolled) {
-      this.setState({ scrolled: true });
-    } else if (scrollY <= 200 && this.state.scrolled) {
-      this.setState({ scrolled: false });
-    }
+    const scrolled = window.scrollY > 10; // Adjust the threshold as needed
+    this.setState({ scrolled });
   }
+
   render() {
     const { scrolled } = this.state;
     const navbarClass = scrolled ? "scrolled-navbar" : "";
+
     return (
       <BrowserRouter>
         <div>
@@ -54,28 +50,12 @@ export default class NavbarComp extends Component {
                   height="45"
                   className="d-inline-block align-top "
                 />
-                <span style={{ marginRight: 10 }}></span>
+                <span id="navDist"></span> 
                 SEPREX
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto nav-links">
-                  <Nav.Link eventKey="1"  as={Link} to="/">
-                    Home
-                  </Nav.Link>
-                  <Nav.Link eventKey="2"  as={Link} to="/products">
-                    Products
-                  </Nav.Link>
-                  <Nav.Link eventKey="2"  as={Link} to="/services">
-                    Services
-                  </Nav.Link>
-                  {/* <Nav.Link as={Link} to="/aboutus">
-                    About Us
-                  </Nav.Link> */}
-                  <Nav.Link eventKey="2"  as={Link} to="/trialfacility">
-                    Trial Facility
-                  </Nav.Link>
-                </Nav>
+              <Navbar.Collapse id="basic-navbar-nav" >
+                <NavbarLinks className="navBarLinks"/>
               </Navbar.Collapse>
             </Container>
           </Navbar>
@@ -87,7 +67,6 @@ export default class NavbarComp extends Component {
             <Route path="/products/:productId" element={<ProductDetails />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:serviceId" element={<ServiceDetails />} />
-            {/* <Route path="/aboutus" element={<Aboutus />} /> */}
             <Route path="/trialfacility" element={<TrialFacility />} />
           </Routes>
         </div>
@@ -95,3 +74,26 @@ export default class NavbarComp extends Component {
     );
   }
 }
+
+function NavbarLinks() {
+  const location = useLocation();
+
+  return (
+    <Nav className="me-auto nav-links">
+      <Nav.Link as={Link} to="/" className={location.pathname === '/' ? 'active' : ''}>
+        Home
+      </Nav.Link>
+      <Nav.Link as={Link} to="/products" className={location.pathname.startsWith('/products') ? 'active' : ''}>
+        Products
+      </Nav.Link>
+      <Nav.Link as={Link} to="/services" className={location.pathname.startsWith('/services') ? 'active' : ''}>
+        Services
+      </Nav.Link>
+      <Nav.Link as={Link} to="/trialfacility" className={location.pathname === '/trialfacility' ? 'active' : ''}>
+        Trial Facility
+      </Nav.Link>
+    </Nav>
+  );
+}
+
+export default NavbarComp;

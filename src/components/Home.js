@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState} from "react";
+import React, { Component, useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Competencies from "./Competencies";
 import OurCustomer from "./OurCustomer";
@@ -23,35 +23,32 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
-  }, []); 
+  }, []);
 
   return (
     <section className="hero-wrapper">
-    <div className="paddings innerWidth flexCenter hero-container">
-      {/* left side */}
-      <div className="flexColStart hero-left">
-        <div className="hero-title">
-          <div className="orange-circle" />
-          {/* SEPREX, led by passionate engineers, redefines industries with innovative processes.<br /> We specialize in tailored solutions, from equipment design to troubleshooting, adhering to global standards. 
-          <br />Our in-house pilot facility enables comprehensive system testing. <br />Explore our commitment to quality, sustainability, and custom solutions.<br /><br />Join us in shaping the future with SEPREX. */}
-          <h1>About Us</h1>
-          Seprex is started by a team of passionate engineers from renowned institutes in India. Seprex started with the objective of facilitating the chemical industry in technology transfer, troubleshooting and process improvement. Seprex is mainly engaged with manufacturing and supply of skid-mounted/modular, semi/fully automated Lab/Bench/Pilot/Demo Scale Plants on a turnkey basis at par with global standards. Seprex also assists in troubleshooting and improvement in production rates, yield, energy efficiency and quality by rigorous experimentation/process modeling and simulation/advanced process control. Seprex has an in-house pilot scale fixed bed/batch / Continuous reactor and distillation facility, where our client performs preliminary investigation to understand their systems.  
-          <motion.h1
-            initial={{ y: "20rem", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 2,
-              type: "ease-in",
-            }}
-          />
+      <div className="paddings innerWidth flexCenter hero-container" style={{ backgroundImage: `url('./images/bgTop.png')`, backgroundSize: '30%', backgroundPosition: 'top right', backgroundRepeat: 'no-repeat' }}>
+        {/* left side */}
+        <div className="flexColStart hero-left">
+          <div className="hero-title">
+            <div className="orange-circle" />
+            <h1>About Us</h1>
+            Seprex is started by a team of passionate engineers from renowned institutes in India. Seprex started with the objective of facilitating the chemical industry in technology transfer, troubleshooting and process improvement. Seprex is mainly engaged with manufacturing and supply of skid-mounted/modular, semi/fully automated Lab/Bench/Pilot/Demo Scale Plants on a turnkey basis at par with global standards. Seprex also assists in troubleshooting and improvement in production rates, yield, energy efficiency and quality by rigorous experimentation/process modeling and simulation/advanced process control. Seprex has an in-house pilot scale fixed bed/batch / Continuous reactor and distillation facility, where our client performs preliminary investigation to understand their systems.
+            <motion.h1
+              initial={{ y: "20rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "ease-in",
+              }}
+            />
+          </div>
         </div>
-      </div>
 
-      {/* right side */}
-      <div className="flexCenter hero-right">
+        {/* <div className="flexCenter hero-right">
         <motion.div
           initial={{ x: "7rem", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -64,9 +61,21 @@ const Hero = () => {
         >
           <img src={images[currentImageIndex]} alt="" />
         </motion.div>
+      </div> */}
+        <div className="flexCenter hero-right">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            exit={{ opacity: 0 }}
+            className="image-container"
+          >
+            <img src={images[currentImageIndex]} alt="" loading="lazy" />
+          </motion.div>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
   );
 };
 
@@ -75,7 +84,6 @@ export default class Home extends Component {
     return (
       <>
         <div className="App">
-        <div className="hero-row">
           <Hero />
         </div>
         <div className="competencies-row">
@@ -84,62 +92,7 @@ export default class Home extends Component {
         <div className="our-customer-row">
           <OurCustomer />
         </div>
-      </div>
       </>
     );
   }
 }
-
- {/* <div className="carousel-container">
-          <Carousel data-bs-theme="dark">
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/1.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/2.jpg"
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/3.jpg"
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/4.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/5.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/6.jpg"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/images/carousel/7.jpg"
-              />
-            </Carousel.Item>
-          </Carousel>
-          
-        </div> */}

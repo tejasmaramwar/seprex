@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import services from "./servicesdata";
-import "./css/serviceDetails.css";
 import {
   Col,
   Container,
@@ -28,12 +27,12 @@ const ServiceDetails = () => {
   return (
     <div className="service-details-container">
       <div className="product-details-header">
-        <h2 className="text-center">{service.name}</h2>
+        <h2 className="text-center" style={{marginTop:"80px"}}>{service.name}</h2>
       </div>
       <div className="service-details-content">
         <div className="first-part">
           <Container>
-            <Row className="align-items-center">
+          <Row className="align-items-center">
               <Col lg={6} md={5}>
                 <img
                   src={service.image}
@@ -48,13 +47,13 @@ const ServiceDetails = () => {
           </Container>
         </div>
 
-        {service.hasOwnProperty("secondImage") ? (
+        {service.hasOwnProperty("secondImage") && (
           <div className="middle-image">
             <img src={service.secondImage} alt="Content" />
           </div>
-        ) : undefined}
+        )}
 
-        <div className="second-part">
+        <div className="accordin">
           <Accordion alwaysOpen>
             <AccordionItem>
               <AccordionHeader className="d-flex justify-content-center">
@@ -71,114 +70,111 @@ const ServiceDetails = () => {
           </Accordion>
         </div>
 
-        {service.hasOwnProperty("powerofCFDtitle") ? (
+        {service.hasOwnProperty("powerofCFDtitle") && (
           <div className="third-part">
-            <div>
-              <section className="explorePower">
-                <h4 className="text-center" style={{ fontWeight: 600 }}>
-                  {service.powerofCFDtitle}
-                </h4>
-                <Carousel
-                  style={{
-                    backgroundColor: "#f0f0f0",
-                    width: "90%",
-                    margin: "auto",
-                  }}
-                >
-                  {service.powerofCFDHeadings.map((text, index) => (
-                    <Carousel.Item
-                      key={index}
-                      style={{ backgroundColor: "#ffffff", padding: "20px" }}
-                    >
-                      <div className="d-flex flex-column align-items-center">
-                        <h2>{text}</h2>
-                        <p>{service.powerofCFDcontent[index]}</p>
-                      </div>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-              </section>
-              <section className="whychoose">
-                <h2>{service.whychoose}</h2>
-                <ul>
-                  {service.whychooseHeadings.map((text, index) => (
-                    <li>
-                      <strong>{text}</strong>
-                      {service.whychooseContent[index]}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            </div>
+            <section className="explorePower">
+              <h4 className="text-center" style={{ fontWeight: 600 }}>
+                {service.powerofCFDtitle}
+              </h4>
+              <Carousel
+                style={{
+                  backgroundColor: "#f0f0f0",
+                  width: "70%",
+                  margin: "auto",
+                }}
+              >
+                {service.powerofCFDHeadings.map((text, index) => (
+                  <Carousel.Item
+                    key={index}
+                    style={{ backgroundColor: "#ffffff", padding: "80px" }}
+                  >
+                    <div className="d-flex flex-column align-items-center">
+                      <h2 style={{marginBottom:"50px"}}>{text}</h2>
+                      <p style={{marginLeft:"30px"}}>{service.powerofCFDcontent[index]}</p>
+                    </div>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </section>
+            <section className="whychoose" style={{ textAlign: 'center', marginTop: '20px', marginLeft: '100px', marginRight: '100px' }}>
+  <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    {service.whychooseHeadings.map((text, index) => (
+      <li key={index} style={{ marginBottom: '20px'}}> 
+        <strong style={{ marginBottom: '10px' }}>{text}</strong> 
+        {service.whychooseContent[index]}
+      </li>
+    ))}
+  </ul>
+</section>
           </div>
-        ) : undefined}
+        )}
 
-        {service.hasOwnProperty("elevateTitle") ? (
+        {service.hasOwnProperty("elevateTitle") && (
           <div className="third-part">
-            <div>
-              <section className="elevate">
-                <h4 className="text-center" style={{ fontWeight: 600 }}>
-                  {service.elevateTitle}
-                </h4>
-                <Carousel
-                  style={{
-                    backgroundColor: "#f0f0f0",
-                    width: "90%",
-                    margin: "auto",
-                  }}
-                >
-                  {service.elevateHeadings.map((text, index) => (
-                    <Carousel.Item
-                      key={index}
-                      style={{ backgroundColor: "#ffffff", padding: "20px" }}
-                    >
-                      <div className="d-flex flex-column align-items-center">
-                        <h2>{text}</h2>
-                        <p>{service.elevatecontent[index]}</p>
-                      </div>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
-              </section>
-              <section className="whychoose">
-                <h2>{service.whychoose}</h2>
-                <ul>
-                  {service.whychooseHeadings.map((text, index) => (
-                    <li>
-                      <strong>{text}</strong>
-                      {service.whychooseContent[index]}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <section className="third-steps">
-                <Container>
-                  <Row className="align-items-center">
-                    <Col lg={6} md={12} sm={12}>
-                      <h4>
-                        A process improvement or troubleshooting assignment
-                        involves the following steps:
-                      </h4>
-                      <ul>
-                        <li>Brainstorming and root causes</li>
-                        <li>Defining the hypotheses based on initial data</li>
-                        <li>
-                          Diagnostic different outcomes of proposed hypothesis.
-                        </li>
-                        <li>
-                          Rating the hypothesis based on hazards, cost and time
-                        </li>
-                      </ul>
-                    </Col>
-                    <Col lg={6} md={12} sm={12}>
-                      <img src={service.thirdImage} alt="Content" />
-                    </Col>
-                  </Row>
-                </Container>
-              </section>
-            </div>
+            <section className="elevate">
+              <h4 className="text-center" style={{ fontWeight: 600 }}>
+                {service.elevateTitle}
+              </h4>
+              <Carousel
+                style={{
+                  backgroundColor: "#f0f0f0",
+                  width: "90%",
+                  margin: "auto",
+                }}
+              >
+                {service.elevateHeadings.map((text, index) => (
+                  <Carousel.Item
+                    key={index}
+                    style={{ backgroundColor: "#ffffff", padding: "40px" }}
+                  >
+                    <div className="d-flex flex-column align-items-center">
+                      <h2 style={{marginBottom:"50px"}}>{text}</h2>
+                      <p style={{marginLeft:"60px", marginRight:"30px"}}>{service.elevatecontent[index]}</p>
+                    </div>
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </section>
+            <section className="whychoose" style={{ textAlign: 'center', marginTop: '20px', marginLeft: '100px', marginRight: '100px' }}>
+  <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    {service.whychooseHeadings.map((text, index) => (
+      <li key={index} style={{ marginBottom: '20px'}}> 
+        <strong style={{ marginBottom: '10px' }}>{text}</strong> 
+        {service.whychooseContent[index]}
+      </li>
+    ))}
+  </ul>
+</section>
+            <section className="third-steps">
+              <Container>
+                <Row className="align-items-center">
+                  <Col lg={6} md={12} sm={12}>
+                    <h4>
+                      A process improvement or troubleshooting assignment
+                      involves the following steps:
+                    </h4>
+                    <ul>
+                      <li>Brainstorming and root causes</li>
+                      <li>Defining the hypotheses based on initial data</li>
+                      <li>
+                        Diagnostic different outcomes of proposed hypothesis.
+                      </li>
+                      <li>
+                        Rating the hypothesis based on hazards, cost and time
+                      </li>
+                    </ul>
+                  </Col>
+                  <Col lg={6} md={12} sm={12} className="d-flex justify-content-center align-items-center">
+                    <img src={service.thirdImage} alt="Content" style={{ maxWidth: "100%", height: "auto" }} />
+                  </Col>
+
+                </Row>
+              </Container>
+            </section>
           </div>
-        ) : undefined}
+        )}
       </div>
     </div>
   );

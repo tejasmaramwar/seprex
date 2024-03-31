@@ -17,7 +17,7 @@ const services = [
       "Energy Efficiency Consulting",
       "Cost Estimation",
     ],
-    color: "#9edeeb",
+    color: "#ffffff",
   },
   {
     id: "2",
@@ -37,7 +37,7 @@ const services = [
       "Food and Beverages",
       "And more..!",
     ],
-    color: "#9edeeb",
+    color: "#4c4c4c",
   },
   {
     id: "3",
@@ -55,7 +55,7 @@ const services = [
       "Environmental",
       "And more..!",
     ],
-    color: "#9edeeb",
+    color: "#ffffff",
     powerofCFDtitle: "Explore the Power of CFD Simulation with SEPREX:",
     powerofCFDHeadings: [
       "Fluid Dynamics Unleashed:",
@@ -69,21 +69,22 @@ const services = [
     ],
     whychoose: "Why Choose SEPREX for CFD Simulation:",
     whychooseHeadings: [
-      "Expertise beyond Expectations:",
-      "Innovative Solutions:",
-      "Cost-Efficient Design:",
-      "Engineering Excellence:",
+      "Expertise beyond Expectations : ",
+      "Innovative Solutions : ",
+      "Cost-Efficient Design : ",
+      "Engineering Excellence : ",
     ],
     whychooseContent: [
-      "Benefit from the expertise of our experienced team skilled in the nuances of fluid dynamics and CFD simulation.",
-      "Advance your organization with innovative solutions derived from detailed CFD analysis and optimization.",
-      "Identify and correct design inefficiencies without the cost of physical prototyping, ensuring optimal resource utilization.",
-      "Navigate the complexities of fluid dynamics with confidence, as SEPREX brings a commitment to engineering excellence to every simulation.Welcome to the realm where fluid dynamics meets precision engineering. Explore the transformative possibilities with SEPREX – your partner in unlocking the full potential of CFD simulation.",
+      " Benefit from the expertise of our experienced team skilled in the nuances of fluid dynamics and CFD simulation.",
+      " Advance your organization with innovative solutions derived from detailed CFD analysis and optimization.",
+      " Identify and correct design inefficiencies without the cost of physical prototyping, ensuring optimal resource utilization.",
+      " Navigate the complexities of fluid dynamics with confidence, as SEPREX brings a commitment to engineering excellence to every simulation.\nWelcome to the realm where fluid dynamics meets precision engineering. Explore the transformative possibilities with SEPREX – your partner in unlocking the full potential of CFD simulation.",
     ],
+    
   },
   {
     id: "4",
-    name: "Process Intensification and troubleshooting",
+    name: "Process Intensification &\n troubleshooting",
     description:
       "Welcome to SEPREX, where simplicity meets process depth and efficiency in troubleshooting solutions. At the forefront of industrial innovation, we specialize in revolutionizing processes to achieve higher productivity, lower environmental impact and increased reliability. Whether you are looking to optimize existing operations or troubleshoot challenges, SEPREX is your dedicated partner in advancing your industrial endeavours.",
     image: "/images/services/processinten.jpg",
@@ -97,7 +98,7 @@ const services = [
       "Environmental",
       "And more..!",
     ],
-    color: "#9edeeb",
+    color: "#4c4c4c",
     elevateTitle: "Elevate Your Processes with SEPREX:",
     elevateHeadings: [
       "Process Intensification Mastery:",

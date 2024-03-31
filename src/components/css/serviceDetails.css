@@ -1,66 +1,45 @@
-.service-details-container {
-  /* margin: 6rem 0; */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding-top: 80px;
+.servicescontent {
+  background-color: #ffffff;
+  padding: 100px 0;
 }
 
-.middle-image {
+.Heading {
+  color: #ff9b3f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.text-shadow {
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.services-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
-  padding: 30px;
 }
 
-.middle-image img {
-  width: 80%;
-  height: auto;
+.service-column {
+  margin: 35px 50px;
+  width: calc(50% - 20px); 
+}
+.cardborder {
+  border: 1px solid rgba(0, 0, 0, .2);
+  overflow: hidden;
+  border-radius: 3px;
+  transition: all .1s linear;
+  text-decoration: none;
+  background-color: #727272;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.second-part {
-  margin: 0 !important;
-  background-color: #9edeeb;
+.card-title {
+  text-align: center;
 }
 
-.third-part {
-  margin: 40px 20px;
+.card-body:hover {
+  background-color: #f0f0f0;
 }
-
-.third-part .explorePower{
-  padding: 30px;
-  background-color: white;
-  width: 100%;
-}
-
-.third-part .explorePower h4{
-  margin-bottom: 30px;
-}
-
-.third-part .elevate{
-  padding-top: 30px;
-  background-color: white;
-}
-
-.third-part .whychoose {
-  margin: 20px;
-  padding: 30px;
-}
-
-.third-part .third-steps{
-  width: 100%;
-  margin: 0;
-  background-color: white;
-  padding: 30px;
-}
-
-.third-part .third-steps .container img {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 700px) {
-  .third-part .whychoose {
-    margin: 10px;
-    padding: 10px;
-  }
+.accordin{
+  margin: 10px 10px;
+  background-color: white !important;
 }

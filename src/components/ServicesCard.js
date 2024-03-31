@@ -21,10 +21,11 @@ export default function ServicesCard({ service }) {
         className="cardborder mb-5"
         style={{
           width: "100%",
-          border: "1px solid rgba(0,0,0,.2)",
+          border: "15px solid rgba(0,0,0,.2)",
           overflow: "hidden",
           height: "25em",
-          borderRadius: 3,
+          borderRadius: "30px",
+          borderColor:"#727272",
           transition: "all .1s linear",
           textDecoration: "none",
           backgroundColor: "#cecece",
@@ -53,6 +54,22 @@ export default function ServicesCard({ service }) {
         </div>
         <Card.Body className="card-body">
           <Card.Title>{service.name}</Card.Title>
+          <p
+  className="read-more-text"
+  style={{
+    width:"200px",
+    position: "absolute",
+    bottom: "300px",
+    left: "500px",
+    color: "white",
+    background: "#727272", 
+    padding: "5px 10px", 
+    borderRadius: "5px" 
+  }}
+>
+  Read More &gt;&gt;
+</p>
+
         </Card.Body>
       </Card>
     </Link>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import { Link } from "react-router-dom";
-import "./css/card.css";
+import "./css/servicesCard.css";
 
 export default function ServicesCard({ service }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -16,7 +16,7 @@ export default function ServicesCard({ service }) {
   };
 
   return (
-    <Link to={`/services/${service.id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/services/${service.id}`}>
       <Card
         className="cardborder mb-5"
         style={{
@@ -34,20 +34,12 @@ export default function ServicesCard({ service }) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div
-          style={{
-            height: "",
-            overflow: "hidden",
-          }}
-        >
+        <div>
           <img
+            className="servicesCardImage"
             src={service.image}
             alt={service.name}
             style={{
-              width: "100%",
-              height: "25em",
-              objectFit: "cover",
-              transition: "transform 0.5s",
               transform: isHovered ? "scale(1.1)" : "scale(1)",
             }}
           />

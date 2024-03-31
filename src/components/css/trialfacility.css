@@ -7,12 +7,12 @@
   font-weight: bold;
 }
 
-.Heading.text-shadow {
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4); 
+.text-shadow {
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .trialfacilitydesc {
-  background-image: url('../../../public/images/clawImg.png');
+  background-image: url("../../../public/images/clawImg.png");
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@
 
 .text-container {
   text-align: center;
-  background-image: url('../../../public/images/textback.png');
+  background-image: url("../../../public/images/textback.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,7 +41,6 @@
   border-radius: 10px;
   color: #4c4c4c;
 }
-
 
 .trialfacilitycard {
   background-color: #ffffff;
@@ -80,4 +79,3 @@
 .custom-container {
   margin-bottom: 40px; /* Adjust margin as needed */
 }
-

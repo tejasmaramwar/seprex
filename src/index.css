@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-:root{
+:root {
   /* --theme-color: #25CCF7; */
   /* --primary: #1f3e72; */
   /* --secondary: rgba(255, 255, 255, 0.78); */
@@ -17,7 +17,6 @@
   /* --blue: #4066ff; */
   /* --lightBlue: #eeeeff; */
   --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
-
 }
 
 /* aryanadd */
@@ -37,7 +36,7 @@
 .social {
   position: fixed;
   top: 30%;
-  right:0%;
+  right: 0%;
   z-index: 10000000;
 }
 
@@ -45,7 +44,6 @@
   list-style-type: none;
   padding: 0;
   transform: translatex(250px);
-
 }
 
 .social ul li {
@@ -71,7 +69,6 @@
   background-color: white;
 }
 
-
 .social ul li a {
   color: #ff922d;
   text-decoration: none;
@@ -85,50 +82,56 @@
   border-radius: 50%;
 
   font-size: 20px;
-  transform:rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .social ul li:hover i {
   transform: rotate(360deg);
   transition: all 1s;
 }
-/* NAVBAR STYLING START */
 
 /* PRODUCTS SECTION START */
-
 .products {
   position: relative;
   padding-top: 30px;
 }
 
-.products .products-title{
-  color: white;
-  padding-top: 70px;
+.products .products-title {
+  color: black;
+  padding-top: 60px;
 }
 
-.row{
+.row {
   padding-top: 30px;
 }
 
-/* ABOUT US SECTION START */
-.aboutustitle {
-  padding-top: 25px;
-  padding-bottom: 30px;
+.prodHeading {
+  color: #4c4c4c;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.aboutuscompetencies {
-  justify-content: left;
-  text-align: left;
-  padding-left: 70px;
+.prod-text-shadow {
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+} 
+
+/* SERVICES SECTION START */
+.services {
+  padding-top: 50px;
 }
 
-.aboutuscompetencies ul {
-  list-style-type: none;
-  padding-left: 0;
+.services .services-title {
+  padding-top: 40px;
 }
 
-.aboutuscompetencies ul li::before {
-  content: "- ";
+.servHeading {
+  color: #4c4c4c;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.serv-text-shadow {
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4); 
 }
 
 /* RESPONSIVE MEDIA QUERY (MOBILE FRIENDLY) */

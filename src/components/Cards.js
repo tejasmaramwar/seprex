@@ -9,7 +9,7 @@ export default function Cards({ product, reverse }) {
       {reverse ? (
         <>
           <Col className="productSingleSentenceCol" lg={6} md={12} sm={12}>
-            <Card bg="transparent" text="white" className="mb-2">
+            <Card className="mb-2">
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>{product.productSingleSentence}</Card.Text>
@@ -22,31 +22,25 @@ export default function Cards({ product, reverse }) {
             </Card>
           </Col>
           <Col lg={6} md={12} sm={12}>
-            <img
-              src={product.image}
-              alt={product.name}
-              className="img-fluid"
-              style={{
-                width: "100%",
-                height: "25rem",
-                objectFit: "fill",
-              }}
-            />
+            <div className="productCardImage">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="img-fluid"
+              />
+            </div>
           </Col>
         </>
       ) : (
         <>
           <Col lg={6} md={12} sm={12}>
-            <img
-              src={product.image}
-              alt={product.name}
-              className="img-fluid"
-              style={{
-                width: "100%",
-                height: "25rem",
-                objectFit: "fill",
-              }}
-            />
+            <div className="productCardImage">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="img-fluid"
+              />
+            </div>
           </Col>
           <Col className="productSingleSentenceCol" lg={6} md={12} sm={12}>
             <Card bg="transparent" text="white" className="mb-2">

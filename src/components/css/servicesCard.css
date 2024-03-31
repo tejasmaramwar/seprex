@@ -1,0 +1,26 @@
+.container .row a {
+  text-decoration: none;
+}
+
+.servicesCard {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 25em;
+  border-radius: 3;
+  transition: all 0.1s linear;
+  text-decoration: none;
+  background-color: #cecece;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.servicesCard div {
+  overflow: hidden;
+}
+
+.servicesCardImage {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+  transition: transform 0.5s;
+}

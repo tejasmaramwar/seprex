@@ -39,12 +39,27 @@ export default function AppFooter() {
 
           <h6>Address:</h6>
           <p>
-            Office No.S-9,2nd Floor, Ashwarayam One, Kalbhor Pimpri-Chinchwad,
-            Pune-411019
+            GAT NO. - 1102, Opposite VOSS Automotive India Pvt. Ltd., Urawade
+            Road, Pirangut, <br />
+            Teh - Mulshi, Dist. Pune, 412115
           </p>
 
-          <h6>Email:</h6>
-          <p>info@seprex.com</p>
+          <table className="footerEmailAndMobile">
+            <tbody>
+              <tr>
+                <td>
+                  <h6>Email:</h6>
+                </td>
+                <td>
+                  <h6>Mobile No.</h6>
+                </td>
+              </tr>
+              <tr>
+                <td>info@seprex.com</td>
+                <td>8668313398</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className="footerRight">
           <h3>Get in Touch</h3>
@@ -63,12 +78,7 @@ export default function AppFooter() {
             />
           </InputGroup>
           <InputGroup className="mb-3">
-            <Form.Control
-              id="phoneInput"
-
-              placeholder="Phone Number..."
-            />
-
+            <Form.Control id="phoneInput" placeholder="Phone Number..." />
           </InputGroup>
           <InputGroup>
             <Form.Control

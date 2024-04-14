@@ -7,9 +7,10 @@ footer {
 .footerMain {
   display: flex;
   align-items: center;
+  padding-left: 50px;
 }
 
-.footerRight{
+.footerRight {
   width: 30%;
   margin-left: 250px;
 }
@@ -35,19 +36,19 @@ footer {
   width: 100%;
 }
 
-.footerRight InputGroup {
-  margin-bottom: 15px;
-}
-
 .submitButton {
   background-color: #ff9635;
   border-color: #ffffff;
   margin-top: 10px;
 }
 
-.footerMain .footerLeft h6{
+.footerMain .footerLeft h6 {
   font-size: 17px;
   font-weight: bolder;
+}
+
+.footerEmailAndMobile td:nth-child(2) {
+  padding-left: 50px;
 }
 
 @media (max-width: 1200px) {

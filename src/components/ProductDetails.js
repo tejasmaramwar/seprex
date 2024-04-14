@@ -41,7 +41,7 @@ const ProductDetails = () => {
             {product.featuresTitle.map((text, index) => (
               <Carousel.Item
                 key={index}
-                style={{ backgroundColor: "#ffffff", padding: "20px" }}
+                style={{ backgroundColor: "#ffffff", padding: "20px 100px" }}
               >
                 <div className="d-flex flex-column align-items-center">
                   <h2>{text}</h2>
@@ -68,6 +68,7 @@ const ProductDetails = () => {
             </Row>
           </Container>
         </div>
+
         <div className="fourth-part">
           {product.hasOwnProperty("fourthPartImage") ? (
             <div>

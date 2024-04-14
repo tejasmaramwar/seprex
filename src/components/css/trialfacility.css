@@ -12,10 +12,6 @@
 }
 
 .trialfacilitydesc {
-  background-image: url("../../../public/images/clawImg.png");
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
   margin: 20px auto;
   max-width: 800px;
@@ -33,10 +29,10 @@
 
 .text-container {
   text-align: center;
-  background-image: url("../../../public/images/textback.png");
+  /* background-image: url("../../../public/images/textback.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   padding: 20px;
   border-radius: 10px;
   color: #4c4c4c;

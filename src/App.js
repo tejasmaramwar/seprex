@@ -8,8 +8,14 @@ function App() {
     <>
       <nav className="social">
         <ul>
-          <li className="gmail"><i className="fa fa-envelope"  aria-hidden="true"></i>&nbsp;<a href="mailto:info@seprex.com">info@seprex.com</a></li>
-          <li className="phoneno"><i className="fa fa-phone" aria-hidden="true"></i> &nbsp;  <a href="tel:+919730815510">9730815510</a></li>
+          <li className="gmail">
+            <i className="fa fa-envelope" aria-hidden="true"></i>&nbsp;
+            <a href="mailto:info@seprex.com">info@seprex.com</a>
+          </li>
+          <li className="phoneno">
+            <i className="fa fa-phone" aria-hidden="true"></i> &nbsp;{" "}
+            <a href="tel:+8668313398">8668313398</a>
+          </li>
         </ul>
       </nav>
       <div className="App">

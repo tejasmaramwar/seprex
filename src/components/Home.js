@@ -1,5 +1,4 @@
 import React, { Component, useEffect, useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 import Competencies from "./Competencies";
 import OurCustomer from "./OurCustomer";
 import "./css/home.css";
@@ -67,20 +66,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <div className="flexCenter hero-right">
-        <motion.div
-          initial={{ x: "7rem", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 2,
-            type: "ease-in",
-          }}
-          exit={{ opacity: 0 }}
-          className="image-container"
-        >
-          <img src={images[currentImageIndex]} alt="" />
-        </motion.div>
-      </div> */}
         <div className="flexCenter hero-right">
           <motion.div
             initial={{ opacity: 0 }}

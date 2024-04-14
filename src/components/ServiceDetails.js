@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
+import "./css/serviceDetails.css";
 
 const ServiceDetails = () => {
   const { serviceId } = useParams();
@@ -27,20 +28,21 @@ const ServiceDetails = () => {
   return (
     <div className="service-details-container">
       <div className="product-details-header">
-        <h2 className="text-center" style={{marginTop:"80px"}}>{service.name}</h2>
+        <h2 className="text-center">
+          {service.name}
+        </h2>
       </div>
       <div className="service-details-content">
-        <div className="first-part">
+        <div className="serviceDescription">
           <Container>
-          <Row className="align-items-center">
-              <Col lg={6} md={5}>
+            <Row className="align-items-center">
+              <Col lg={5}>
                 <img
                   src={service.image}
                   alt="Content"
-                  style={{ maxWidth: "100%", height: "auto" }}
                 />
               </Col>
-              <Col lg={6} md={7}>
+              <Col lg={7}>
                 <p>{service.description}</p>
               </Col>
             </Row>
@@ -89,24 +91,34 @@ const ServiceDetails = () => {
                     style={{ backgroundColor: "#ffffff", padding: "80px" }}
                   >
                     <div className="d-flex flex-column align-items-center">
-                      <h2 style={{marginBottom:"50px"}}>{text}</h2>
-                      <p style={{marginLeft:"30px"}}>{service.powerofCFDcontent[index]}</p>
+                      <h2 style={{ marginBottom: "50px" }}>{text}</h2>
+                      <p style={{ marginLeft: "30px" }}>
+                        {service.powerofCFDcontent[index]}
+                      </p>
                     </div>
                   </Carousel.Item>
                 ))}
               </Carousel>
             </section>
-            <section className="whychoose" style={{ textAlign: 'center', marginTop: '20px', marginLeft: '100px', marginRight: '100px' }}>
-  <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
-  <ul style={{ listStyleType: 'none', padding: 0 }}>
-    {service.whychooseHeadings.map((text, index) => (
-      <li key={index} style={{ marginBottom: '20px'}}> 
-        <strong style={{ marginBottom: '10px' }}>{text}</strong> 
-        {service.whychooseContent[index]}
-      </li>
-    ))}
-  </ul>
-</section>
+            <section
+              className="whychoose"
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                marginLeft: "100px",
+                marginRight: "100px",
+              }}
+            >
+              <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
+              <ul style={{ listStyleType: "none", padding: 0 }}>
+                {service.whychooseHeadings.map((text, index) => (
+                  <li key={index} style={{ marginBottom: "20px" }}>
+                    <strong style={{ marginBottom: "10px" }}>{text}</strong>
+                    {service.whychooseContent[index]}
+                  </li>
+                ))}
+              </ul>
+            </section>
           </div>
         )}
 
@@ -129,24 +141,34 @@ const ServiceDetails = () => {
                     style={{ backgroundColor: "#ffffff", padding: "40px" }}
                   >
                     <div className="d-flex flex-column align-items-center">
-                      <h2 style={{marginBottom:"50px"}}>{text}</h2>
-                      <p style={{marginLeft:"60px", marginRight:"30px"}}>{service.elevatecontent[index]}</p>
+                      <h2 style={{ marginBottom: "50px" }}>{text}</h2>
+                      <p style={{ marginLeft: "60px", marginRight: "30px" }}>
+                        {service.elevatecontent[index]}
+                      </p>
                     </div>
                   </Carousel.Item>
                 ))}
               </Carousel>
             </section>
-            <section className="whychoose" style={{ textAlign: 'center', marginTop: '20px', marginLeft: '100px', marginRight: '100px' }}>
-  <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
-  <ul style={{ listStyleType: 'none', padding: 0 }}>
-    {service.whychooseHeadings.map((text, index) => (
-      <li key={index} style={{ marginBottom: '20px'}}> 
-        <strong style={{ marginBottom: '10px' }}>{text}</strong> 
-        {service.whychooseContent[index]}
-      </li>
-    ))}
-  </ul>
-</section>
+            <section
+              className="whychoose"
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                marginLeft: "100px",
+                marginRight: "100px",
+              }}
+            >
+              <h2 style={{ marginBottom: "40px" }}>{service.whychoose}</h2>
+              <ul style={{ listStyleType: "none", padding: 0 }}>
+                {service.whychooseHeadings.map((text, index) => (
+                  <li key={index} style={{ marginBottom: "20px" }}>
+                    <strong style={{ marginBottom: "10px" }}>{text}</strong>
+                    {service.whychooseContent[index]}
+                  </li>
+                ))}
+              </ul>
+            </section>
             <section className="third-steps">
               <Container>
                 <Row className="align-items-center">
@@ -166,10 +188,18 @@ const ServiceDetails = () => {
                       </li>
                     </ul>
                   </Col>
-                  <Col lg={6} md={12} sm={12} className="d-flex justify-content-center align-items-center">
-                    <img src={service.thirdImage} alt="Content" style={{ maxWidth: "100%", height: "auto" }} />
+                  <Col
+                    lg={6}
+                    md={12}
+                    sm={12}
+                    className="d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src={service.thirdImage}
+                      alt="Content"
+                      style={{ maxWidth: "100%", height: "auto" }}
+                    />
                   </Col>
-
                 </Row>
               </Container>
             </section>

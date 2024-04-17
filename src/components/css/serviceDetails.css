@@ -1,8 +1,11 @@
 .service-details-container {
   padding-top: 60px;
-  background-image: url("../../../public/images/bgTop.png");
-  background-size: 30%;
-  background-position: top right;
+}
+
+.accordin {
+  background-image: url("../../../public/images/bgMid.png");
+  background-size: contain;
+  background-position: left;
   background-repeat: no-repeat;
 }
 

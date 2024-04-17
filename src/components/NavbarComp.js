@@ -29,7 +29,7 @@ class NavbarComp extends Component {
   }
 
   handleScroll() {
-    const scrolled = window.scrollY > 10; // Adjust the threshold as needed
+    const scrolled = window.scrollY > 10;
     this.setState({ scrolled });
   }
 

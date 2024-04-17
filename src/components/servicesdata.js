@@ -2,9 +2,10 @@ const services = [
   {
     id: "1",
     name: "Process Engineering",
+    serviceSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Process Engineering.",
     description:
       "Welcome to SEPREX, your trusted partner in process engineering services. At SEPREX, we specialize in providing tailored solutions that optimize your industrial processes. From concept to execution, our experienced team is committed to enhancing efficiency, reliability and sustainability. Explore our services and let's enhance your operations together. Welcome to a new era of process excellence with SEPREX. We provide the following services.",
-    image: "/images/services/processengg.jpg",
+    image: "/images/services/process_engg.jpg",
     serviceheading: "We provide the following services:",
     serviceslist: [
       "Feasibility Studies",
@@ -22,11 +23,11 @@ const services = [
   {
     id: "2",
     name: "Process Simulation",
+    serviceSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Process Simulation.",
     description:
       "Welcome to SEPREX, where the alchemy of virtual innovation changes the landscape of chemical processes. As experts in chemical process simulation, we enter a realm of possibilities that redefine your approach to industrial chemistry. At SEPREX, we don't just simulate; we catalyse a digital revolution, enabling you to imagine, optimize and innovate within the complex world of chemical engineering.",
-    image: "/images/services/process_simulation.jpg",
+    image: "/images/services/process_simulation2.jpg",
     serviceheading: "Industries We Serve:",
-    secondImage: "/images/services/process_simulation2.jpg",
     serviceslist: [
       "Oil and Gas",
       "Petrochemicals",
@@ -42,6 +43,7 @@ const services = [
   {
     id: "3",
     name: "CFD Simulation",
+    serviceSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our CFD Simulation.",
     description:
       "Welcome to SEPREX, your gateway to a transformative world where fluid dynamics meets accuracy through computational fluid dynamics (CFD) simulation. At SEPREX, we are experts in unlocking the secrets of fluid behaviour, providing unique insights for industries ranging from aerospace and automotive to energy and environmental engineering. Join us on a journey where every flow, every interaction and every design is carefully analysed and optimized for peak performance.",
     image: "/images/services/cfdsimulation.jpg",
@@ -85,9 +87,10 @@ const services = [
   {
     id: "4",
     name: "Process Intensification &\n troubleshooting",
+    serviceSingleSentence: "Get to market faster with your technology with SEPREX without compromising safety and quality at optimal cost using our Process Intensification & troubleshooting.",
     description:
       "Welcome to SEPREX, where simplicity meets process depth and efficiency in troubleshooting solutions. At the forefront of industrial innovation, we specialize in revolutionizing processes to achieve higher productivity, lower environmental impact and increased reliability. Whether you are looking to optimize existing operations or troubleshoot challenges, SEPREX is your dedicated partner in advancing your industrial endeavours.",
-    image: "/images/services/processinten.jpg",
+    image: "/images/services/processIntensification.jpg",
     serviceheading: "Industries we serve:",
     serviceslist: [
       "Manufacturing",

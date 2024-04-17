@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import services from "./servicesdata";
 import {
@@ -14,6 +14,10 @@ import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import "./css/serviceDetails.css";
 
 const ServiceDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { serviceId } = useParams();
   const service = services.find((p) => p.id === serviceId);
 
@@ -28,19 +32,14 @@ const ServiceDetails = () => {
   return (
     <div className="service-details-container">
       <div className="product-details-header">
-        <h2 className="text-center">
-          {service.name}
-        </h2>
+        <h2 className="text-center">{service.name}</h2>
       </div>
       <div className="service-details-content">
         <div className="serviceDescription">
           <Container>
             <Row className="align-items-center">
               <Col lg={5}>
-                <img
-                  src={service.image}
-                  alt="Content"
-                />
+                <img src={service.image} alt="Content" />
               </Col>
               <Col lg={7}>
                 <p>{service.description}</p>
@@ -48,12 +47,6 @@ const ServiceDetails = () => {
             </Row>
           </Container>
         </div>
-
-        {service.hasOwnProperty("secondImage") && (
-          <div className="middle-image">
-            <img src={service.secondImage} alt="Content" />
-          </div>
-        )}
 
         <div className="accordin">
           <Accordion alwaysOpen>

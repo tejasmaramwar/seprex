@@ -21,7 +21,6 @@
   margin-right: 20px;
   font-weight: bolder;
   color: black;
-  
 }
 
 .navBarLinks a:hover {
@@ -31,7 +30,7 @@
   text-decoration: underline;
 }
 
-.navBarLinks{
+.navBarLinks {
   color: #ff6600 !important;
 }
 
@@ -42,11 +41,15 @@
 .navbar-brand {
   font-size: 40px;
   font-weight: bold;
-  color: #ff6600 ;
+  color: #00098d;
 }
 
-#navDist{
-margin-left: 10px;
+.navbar-brand:hover{
+  color: #00098d;
+}
+
+#navDist {
+  margin-left: 10px;
 }
 .scrolled-navbar {
   background-color: rgba(48, 46, 46, 0.8) !important;

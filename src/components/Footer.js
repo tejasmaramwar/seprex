@@ -33,8 +33,7 @@ export default function AppFooter() {
             </h3>
           </div>
           <p>
-            Seprex is one-stop Enginering Solution Company setup at Pune India
-            by passionate team of engineers.
+            Seprex a one-stop Enginering Solution Company.
           </p>
 
           <h6>Address:</h6>
@@ -56,7 +55,7 @@ export default function AppFooter() {
               </tr>
               <tr>
                 <td>info@seprex.com</td>
-                <td>8668313398</td>
+                <td>+91-8668313398</td>
               </tr>
             </tbody>
           </table>

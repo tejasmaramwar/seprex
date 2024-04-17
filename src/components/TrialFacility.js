@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "./css/trialfacility.css";
 
 export default class TrialFacility extends Component {
@@ -18,122 +18,106 @@ export default class TrialFacility extends Component {
             controlled but dynamic environment of our pilot plant.
           </p>
           <div className="trialfacilitycontent">
-            <Container className="custom-container">
-              <Row style={{ marginBottom: "100px", marginTop: "40px" }}>
-                <Col md={6}>
-                  <div className="text-container ">
-                    <h4>Pilot Scale Fixed Bed Reactor unit</h4>
-                    <p>
-                      Reactor Volume - 10 ml to 100 ml <br />
-                      Reactor Temperature - Maximum 600 ◦C <br />
-                      Reactor Pressure - 30 bar g <br />
-                      Preheated Temperature - 350 ◦C <br />
-                      Automation - PID based control panel
-                    </p>
-                  </div>
+            <Container>
+              <Row>
+                <Col lg={6} md={12} sm={12}>
+                  <Card className="mb-2">
+                    <Card.Body>
+                      <Card.Title>
+                        Pilot Scale Fixed Bed Reactor unit
+                      </Card.Title>
+                      <ul>
+                        <li>Reactor Volume - 10 ml to 100 ml</li>
+                        <li>Reactor Temperature - Maximum 600 ◦C</li>
+                        <li>Reactor Pressure - 30 bar g</li>
+                        <li>Preheated Temperature - 350 ◦C</li>
+                        <li>Automation - PID based control panel</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
                 </Col>
-                <Col md={6}>
+                <Col lg={6} md={12} sm={12}>
                   <img
-                    src="./images/trialfacility/pilotplant3.jpg"
+                    className="trialFacImage"
+                    src="./images/trialfacility/FixedBedReactor.jpg"
                     alt="Pilot Scale Fixed Bed Reactor unit"
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "10px solid #4c4c4c",
-                      borderRadius: "50px",
-                      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)",
-                    }}
                     loading="lazy"
                   />
                 </Col>
               </Row>
-            </Container>
-            <Container className="custom-container">
-              <Row style={{ marginBottom: "100px", marginTop: "40px" }}>
+              <Row>
                 <Col md={6}>
                   <img
-                    src="./images/trialfacility/distillationunit.png"
+                    className="trialFacImage"
+                    src="./images/trialfacility/Distillation.jpg"
                     alt="Pilot Scale Distillation unit"
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "10px solid #4c4c4c",
-                      borderRadius: "50px",
-                      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)", // Adding shadow
-                    }}
                     loading="lazy"
                   />
                 </Col>
                 <Col md={6}>
-                  <div className="text-container">
-                    <h4>Pilot Scale Distillation unit</h4>
-                    <p>
-                      Mode: Batch as well as continuous <br />
-                      Reboiler Volume - 20 litre <br />
-                      Reboiler Temperature - Maximum 300 ◦C <br />
-                      Column Operating Pressure - Full vacuum to 20 bar g <br />
-                      Column Height - 3 meters <br />
-                      Automation - PID based control panel
-                    </p>
-                  </div>
+                  <Card className="mb-2">
+                    <Card.Body>
+                      <Card.Title>Pilot Scale Distillation unit</Card.Title>
+                      <ul>
+                        <li>Mode: Batch as well as continuous</li>
+                        <li>Reboiler Volume - 20 litre</li>
+                        <li>Reboiler Temperature - Maximum 300 ◦C</li>
+                        <li>
+                          Column Operating Pressure - Full vacuum to 20 bar g
+                        </li>
+                        <li>Column Height - 3 meters</li>
+                        <li>Automation - PID based control panel</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
                 </Col>
               </Row>
-            </Container>
-            <Container className="custom-container">
-              <Row style={{ marginBottom: "100px", marginTop: "40px" }}>
+              <Row>
                 <Col md={6}>
-                  <div className="text-container">
-                    <h4>Pilot Scale Batch Reactor unit</h4>
-                    <p>
-                      Reactor Volume - 85 liters <br />
-                      Reactor Temperature - Maximum 180 ◦C <br />
-                      Reactor Pressure - 10 bar g <br />
-                      Automation - PID based control panel
-                    </p>
-                  </div>
+                  <Card className="mb-2">
+                    <Card.Body>
+                      <Card.Title>Pilot Scale Batch Reactor unit</Card.Title>
+                      <ul>
+                        <li>Reactor Volume - 85 liters</li>
+                        <li>Reactor Temperature - Maximum 180 ◦C</li>
+                        <li>Reactor Pressure - 10 bar g</li>
+                        <li>Automation - PID based control panel</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
                 </Col>
                 <Col md={6}>
                   <img
-                    src="./images/trialfacility/reactor.jpg"
+                    className="trialFacImage"
+                    src="./images/trialfacility/batchreactor.jpg"
                     alt="Pilot Scale Batch Reactor unit"
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "10px solid #4c4c4c",
-                      borderRadius: "50px",
-                      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)", // Adding shadow
-                    }}
                     loading="lazy"
                   />
                 </Col>
               </Row>
-            </Container>
-            <Container className="custom-container">
-              <Row style={{ marginBottom: "100px", marginTop: "40px" }}>
+              <Row>
                 <Col md={6}>
                   <img
-                    src="./images/trialfacility/flowunit.png"
+                    className="trialFacImage"
+                    src="./images/trialfacility/continuousFlow.jpg"
                     alt="Pilot Scale Continuous Flow Reactor unit"
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "10px solid #4c4c4c",
-                      borderRadius: "50px",
-                      boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.5)", // Adding shadow
-                    }}
                     loading="lazy"
                   />
                 </Col>
                 <Col md={6}>
-                  <div className="text-container">
-                    <h4>Pilot Scale Continuous Flow Reactor unit</h4>
-                    <p>
-                      Reactor Volume - 5 liters <br />
-                      Reactor Temperature - Maximum 180 ◦C <br />
-                      Reactor Pressure - 10 bar g <br />
-                      Automation - PID based control panel
-                    </p>
-                  </div>
+                  <Card className="mb-2">
+                    <Card.Body>
+                      <Card.Title>
+                        Pilot Scale Continuous Flow Reactor unit
+                      </Card.Title>
+                      <ul>
+                        <li>Reactor Volume - 5 liters</li>
+                        <li>Reactor Temperature - Maximum 180 ◦C</li>
+                        <li>Reactor Pressure - 10 bar g</li>
+                        <li>Automation - PID based control panel</li>
+                      </ul>
+                    </Card.Body>
+                  </Card>
                 </Col>
               </Row>
             </Container>

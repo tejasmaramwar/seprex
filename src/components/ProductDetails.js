@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import products from "./productData";
 import "./css/productDetails.css";
@@ -14,6 +14,10 @@ import Accordion from "react-bootstrap/Accordion";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 
 const ProductDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { productId } = useParams();
   const product = products.find((p) => p.id === productId);
 

@@ -15,7 +15,7 @@ export default function Cards({ product, reverse }) {
                 <Card.Text>{product.productSingleSentence}</Card.Text>
                 <Link className="learnMore" to={`/products/${product.id}`}>
                   <p>
-                    Learn More <span className="learnMoreArrow">&gt;</span>
+                    Know More <span className="learnMoreArrow">&gt;</span>
                   </p>
                 </Link>
               </Card.Body>
@@ -49,7 +49,7 @@ export default function Cards({ product, reverse }) {
                 <Card.Text>{product.productSingleSentence}</Card.Text>
                 <Link className="learnMore" to={`/products/${product.id}`}>
                   <p>
-                    Learn More <span className="learnMoreArrow">&gt;</span>
+                    Know More <span className="learnMoreArrow">&gt;</span>
                   </p>
                 </Link>
               </Card.Body>

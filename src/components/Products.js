@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Cards from "./Cards";
 import products from "./productData";
 
@@ -9,7 +9,7 @@ export default class Products extends Component {
       <div>
         <div className="products">
           <div className="products-title container">
-            <h1 className="text-center prodHeading prod-text-shadow">Our Products</h1>
+            <h1 className="text-center prodHeading prod-text-shadow">Products</h1>
           </div>
           <div className="productscontent">
             <Container>

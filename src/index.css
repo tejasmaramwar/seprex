@@ -58,7 +58,7 @@
 }
 
 .social ul li:hover {
-  transform: translatex(-130px);
+  transform: translatex(-140px);
 }
 
 .social ul li.gmail:hover {

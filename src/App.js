@@ -14,7 +14,7 @@ function App() {
           </li>
           <li className="phoneno">
             <i className="fa fa-phone" aria-hidden="true"></i> &nbsp;{" "}
-            <a href="tel:+8668313398">8668313398</a>
+            <a href="tel:+918668313398">+91-8668313398</a>
           </li>
         </ul>
       </nav>

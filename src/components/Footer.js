@@ -1,25 +1,30 @@
-import React from "react";
+// import React, { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import "./css/footer.css";
 
-export default function AppFooter() {
-  const handleFormSubmit = () => {
-    const name = document.getElementById("nameInput").value;
-    const email = document.getElementById("emailInput").value;
-    const message = document.getElementById("messageInput").value;
+export const Footer = () => {
+  const form = useRef();
 
-    const subject = "Contact Form Submission";
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    const mailtoLink = `mailto:info@seprex.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
+    emailjs
+      .sendForm('service_nuhvugd', 'template_zh9pm4c', form.current, {
+        publicKey: 'CSaReDKk-nZ4I-nz3',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert("Email sent");
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
-
   return (
     <>
       <div className="footerMain">
@@ -32,17 +37,13 @@ export default function AppFooter() {
               SEPREX PVT LTD.
             </h3>
           </div>
-          <p>
-            Seprex a one-stop Enginering Solution Company.
-          </p>
-
+          <p>Seprex a one-stop Engineering Solution Company.</p>
           <h6>Address:</h6>
           <p>
             GAT NO. - 1102, Opposite VOSS Automotive India Pvt. Ltd., Urawade
             Road, Pirangut, <br />
             Teh - Mulshi, Dist. Pune, 412115
           </p>
-
           <table className="footerEmailAndMobile">
             <tbody>
               <tr>
@@ -61,41 +62,29 @@ export default function AppFooter() {
           </table>
         </div>
         <div className="footerRight">
+        <div>
           <h3>Get in Touch</h3>
-          <InputGroup className="mb-3">
-            <Form.Control
-              id="nameInput"
-              aria-describedby="basic-addon3"
-              placeholder="Enter your name"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Form.Control
-              id="emailInput"
-              aria-label="Amount (to the nearest dollar)"
-              placeholder="Enter your email"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <Form.Control id="phoneInput" placeholder="Phone Number..." />
-          </InputGroup>
-          <InputGroup>
-            <Form.Control
-              id="messageInput"
-              as="textarea"
-              aria-label="With textarea"
-              placeholder="Message..."
-            />
-          </InputGroup>
-          <Button
-            variant="info"
-            className="submitButton"
-            onClick={handleFormSubmit}
-          >
-            Submit
-          </Button>
+        </div>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="inputBox">
+              <input id='name_id' type="text" placeholder="Full Name" name="user_name" />
+            </div>
+            <div className="inputBox">
+              <input type="email" placeholder="Email" name="user_email" />
+            </div>
+            <div className="inputBox">
+              <input type="phone" placeholder="Phone Number" name="phone" />
+            </div>
+            <div className="inputTextBox">
+              <textarea placeholder="Enquiry Message" name="message" />
+            </div>
+            <Button type="submit" className="btn submitButton">
+              Submit
+            </Button>
+          </form>
         </div>
       </div>
     </>
   );
 }
+export default Footer;

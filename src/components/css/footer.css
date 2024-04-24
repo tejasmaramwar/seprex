@@ -3,6 +3,34 @@ footer {
   background-color: #fbead7;
   color: ff9a3d;
 }
+.footerRight .inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerRight .inputBox input {
+  margin-bottom: 10px;
+}
+.inputBox {
+  margin-bottom: 5px; 
+}
+.inputTextBox textarea{
+  padding: 10px; 
+  width: 100%; 
+}
+
+.inputBox input {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease; 
+}
+
+.inputBox input:focus {
+  border-color: #ff9635; 
+}
 
 .footerMain {
   display: flex;
@@ -40,6 +68,12 @@ footer {
   background-color: #ff9635;
   border-color: #ffffff;
   margin-top: 10px;
+  width: 100%; 
+}
+.submitButton:hover {
+  color: black;
+  background-color: white;
+  border-color: none;
 }
 
 .footerMain .footerLeft h6 {
